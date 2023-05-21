@@ -17,6 +17,7 @@ import reactjpg from "./reactImg/react.jpg";
 import reactmap from "./reactImg/reactmap.jpg";
 import korinish from "./reactImg/korinish.jpg";
 import korinish2 from "./reactImg/korinish2.jpg";
+import portfolio from "./reactImg/portfolio.jpg";
 
 export default function Prayektlar() {
   const {
@@ -32,6 +33,12 @@ export default function Prayektlar() {
   } = useContext(ThemaContext);
 
   const cards = [
+    {
+      imgLink: portfolio,
+      title:
+        "Bu loyha moslashuvchan react loyha hisoblanib bunda contexlar juda kop qollanilgan yani contex har bir function uzatilgan",
+      link: "https://portfolio-iqboljon.netlify.app/",
+    },
     {
       imgLink: styledImg,
       title:
