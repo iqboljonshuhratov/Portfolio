@@ -66,8 +66,8 @@ export default function Talim() {
               "<a href="https://online.pdp.uz/about-us">PDP ACADEMY</a>"
               da ta'lim olgan. <br />
               PDP Academyda foundation muvaffaqiyatli tugatilgan. <br />
-              Aosiy qursga imtihon asosida qabul qilingan. <br />
-              Asosiy qursda frontend dasturlash tilini o'rgangan. <br />
+              Aosiy kursga imtihon asosida qabul qilingan. <br />
+              Asosiy kursda frontend dasturlash tilini o'rgangan. <br />
               
             </p>
           </div>
