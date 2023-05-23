@@ -1,4 +1,13 @@
-import { faBook, faBuilding, faContactCard, faHome } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faBook,
+  faBuilding,
+  faContactCard,
+  faHome,
+  faMoon,
+  faSquareXmark,
+  faSun,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useContext } from "react";
@@ -21,6 +30,25 @@ export default function Sidebar() {
   return (
     <div class={`sidebar shadow bg-${theme}`}>
       <div class={`content shadow-lg bg-${theme}`}>
+      <div className={`themeBox2`}>
+      <button id="button2" onClick={Exchange}>
+          {change == true ? (
+            <FontAwesomeIcon icon={faSquareXmark} />
+            ) : (
+              <FontAwesomeIcon icon={faBars} />
+              )}
+        </button>
+        
+        <button id="buttonSun2" onClick={toggleTheme}>
+          {theme == "dark" ? (
+            <FontAwesomeIcon icon={faSun} />
+            ) : (
+              <FontAwesomeIcon icon={faMoon} />
+              )}
+        </button>
+        
+      </div>
+        {/* theme qismi tugadi */}
         <h1
           className={`text-${
             theme == "dark" ? "light" : "dark"
@@ -28,17 +56,50 @@ export default function Sidebar() {
         >
           Iqboljon
         </h1>
+
+        {/* sarlovha qismim tugadi */}
+
         <ul className={`text-${theme == "dark" ? "light" : "dark"} mt-5`}>
-          <li className={`text-${info== 'boshSahifa'?'success': ''} fs-5 fw-bold`} onClick={BoshSahifa1}>
-          <FontAwesomeIcon icon={faHome} />  Bosh Saxifa
+          <li
+            className={`text-${
+              info == "boshSahifa" ? "success" : ""
+            } fs-5 fw-bold`}
+            onClick={BoshSahifa1}
+          >
+            <FontAwesomeIcon icon={faHome} /> Bosh Saxifa
           </li>
           <p></p>
-          <li className={`text-${info== 'talim'?'success': ''} fs-5 fw-bold`} onClick={Talim1} > <FontAwesomeIcon icon={faBook} /> Ta'lim</li>
+          <li
+            className={`text-${info == "talim" ? "success" : ""} fs-5 fw-bold`}
+            onClick={Talim1}
+          >
+            {" "}
+            <FontAwesomeIcon icon={faBook} /> Ta'lim
+          </li>
           <p></p>
-          <li className={`text-${info== 'prayektlar'?'success': ''} fs-5 fw-bold`} onClick={Prayektlar1}> <FontAwesomeIcon icon={faBuilding} /> Loyhalar</li>
+          <li
+            className={`text-${
+              info == "prayektlar" ? "success" : ""
+            } fs-5 fw-bold`}
+            onClick={Prayektlar1}
+          >
+            {" "}
+            <FontAwesomeIcon icon={faBuilding} /> Loyihalar
+          </li>
           <p></p>
-          <li className={`text-${info== 'ozimHaqimda'?'success': ''} fs-5 fw-bold`} onClick={OzimHaqimda1}> <FontAwesomeIcon icon={faContactCard} /> Ulanish</li>
+          <li
+            className={`text-${
+              info == "ozimHaqimda" ? "success" : ""
+            } fs-5 fw-bold`}
+            onClick={OzimHaqimda1}
+          >
+            {" "}
+            <FontAwesomeIcon icon={faContactCard} /> Ulanish
+          </li>
         </ul>
+
+            {/* barchasi tugadi */}
+
       </div>
     </div>
   );

@@ -2,15 +2,41 @@
 .sidebar{
     min-width: 300px !important;
     height: 100vh;
+
     .content{
         width: 300px;
         height: 100vh;    
         position: fixed;
-        padding: 0px 30px 0px 0px !important;
+        
+        .themeBox2{
+            min-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px !important;
+            #button2{
+                min-width: 40px;
+                min-height: 40px;
+                font-size: 20px;
+                background-color: var(--color-primary);
+                color: white;
+                border: none !important;
+            }
+            #buttonSun2{
+                min-width: 40px;
+                min-height: 40px;
+                font-size: 20px;
+                background-color: var(--color-primary);
+                color: yellow;
+                border: none !important;
+                
+            }
+        }
+        
 
 
         ul{
             padding-left: 20px !important;
+            padding-right: 30px !important;
             p{
                 border: 1px solid var(--color-primary);
             }
@@ -22,9 +48,9 @@
                 transition: 0.3s !important;
                 
                 &:hover{
-                    transform: translateX(5px);
-                    transform: translateY(-5px);
-                    
+                    color: green;
+                    // transform: translateX(5px);
+                    // transform: translateY(-5px);
                 }
             }
         }
@@ -66,11 +92,7 @@
                     cursor: pointer;
                     position: relative;
                     
-                    &:hover{
-                        bottom: 3px;
-                        left: 2px;
-                        
-                    }
+                    
                 }
             }
         
@@ -110,11 +132,7 @@
                 cursor: pointer;
                 position: relative;
                 
-                &:hover{
-                    bottom: 3px;
-                    left: 2px;
-                    
-                }
+               
             }
         }
     

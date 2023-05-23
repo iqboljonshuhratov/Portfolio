@@ -17,6 +17,9 @@
 
         .contactInfo{
             width: 50%;
+            a{
+                color: var(--color-primary);
+            }
         }
         .input-box{
             width: 50%;
@@ -28,7 +31,6 @@
                     width: 250px;
                     padding: 10px 15px !important;
                     border-radius: 7px !important;
-                    border: none !important;
                     outline: none;
                     input :nth-child(1){
                         margin-right: 15px !important;

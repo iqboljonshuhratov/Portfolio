@@ -3,7 +3,7 @@
     padding: 0px !important;
     margin: 0px !important;
     box-sizing: border-box !important;
-    user-select: none;
+    // user-select: none;
 
 }
 .mainBox{
@@ -78,6 +78,7 @@
               display: inline-block;
               border-radius: 100%;
               border: 1px solid var(--color-primary);
+              transition: 0.7s !important;
               
               &:hover {
                   background-color: white;
