@@ -23,6 +23,13 @@
         }
         .input-box{
             width: 50%;
+            input{
+                border: 2px solid var(--color-primary) !important;
+            }
+            textarea{
+                border: 2px solid var(--color-primary) !important;
+
+            }
             .fullname-box{
                 display: flex;
                 justify-content: space-between;
