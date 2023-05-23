@@ -38,7 +38,7 @@ export default function Sidebar() {
               <FontAwesomeIcon icon={faBars} />
               )}
         </button>
-        
+
         <button id="buttonSun2" onClick={toggleTheme}>
           {theme == "dark" ? (
             <FontAwesomeIcon icon={faSun} />
@@ -62,7 +62,7 @@ export default function Sidebar() {
         <ul className={`text-${theme == "dark" ? "light" : "dark"} mt-5`}>
           <li
             className={`text-${
-              info == "boshSahifa" ? "success" : ""
+              info == "boshSahifa" ? "danger" : ""
             } fs-5 fw-bold`}
             onClick={BoshSahifa1}
           >
@@ -70,7 +70,7 @@ export default function Sidebar() {
           </li>
           <p></p>
           <li
-            className={`text-${info == "talim" ? "success" : ""} fs-5 fw-bold`}
+            className={`text-${info == "talim" ? "danger" : ""} fs-5 fw-bold`}
             onClick={Talim1}
           >
             {" "}
@@ -79,7 +79,7 @@ export default function Sidebar() {
           <p></p>
           <li
             className={`text-${
-              info == "prayektlar" ? "success" : ""
+              info == "prayektlar" ? "danger" : ""
             } fs-5 fw-bold`}
             onClick={Prayektlar1}
           >
@@ -89,7 +89,7 @@ export default function Sidebar() {
           <p></p>
           <li
             className={`text-${
-              info == "ozimHaqimda" ? "success" : ""
+              info == "ozimHaqimda" ? "danger" : ""
             } fs-5 fw-bold`}
             onClick={OzimHaqimda1}
           >

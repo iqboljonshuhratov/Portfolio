@@ -63,7 +63,7 @@ export default function Talim() {
               Ta'lim olgan muassasa
             </h3>
             <p className={`text-${theme == "dark" ? "light" : "dark"} p-3`}>
-              "<a href="https://online.pdp.uz/about-us">PDP ACADEMY</a>"
+              "<a className={`text-${theme == "dark" ? "light" : "dark"}`} href="https://online.pdp.uz/about-us">PDP ACADEMY</a>"
               da ta'lim olgan. <br />
               PDP Academyda foundation muvaffaqiyatli tugatilgan. <br />
               Aosiy kursga imtihon asosida qabul qilingan. <br />

@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 .rang{
-    background-color: white !important;
+    background-color: rgb(217, 217, 217) !important;
+    transition: 0.7s !important;
 }
 
 .containers{
@@ -15,11 +16,14 @@
     margin: 0;
     padding-top: 0px;
     background-color: black;
+    transition: 0.7s !important;
     
     
     .container1{
         background-color: black;
         display: flex;
+        transition: 0.7s !important;
+
 
     }
 }
