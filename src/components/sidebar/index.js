@@ -31,7 +31,7 @@ export default function Sidebar() {
     <div class={`sidebar shadow bg-${theme}`}>
       <div class={`content shadow-lg bg-${theme}`}>
       <div className={`themeBox2`}>
-      <button id="button2" onClick={Exchange}>
+      <button id="button2" className={`bg-${theme} text-${theme == "dark" ? "light" : "dark"}`} onClick={Exchange}>
           {change == true ? (
             <FontAwesomeIcon icon={faSquareXmark} />
             ) : (
@@ -39,7 +39,7 @@ export default function Sidebar() {
               )}
         </button>
 
-        <button id="buttonSun2" onClick={toggleTheme}>
+        <button id="buttonSun2" className={`bg-${theme} text-${theme == "dark" ? "light" : "dark"}`} onClick={toggleTheme}>
           {theme == "dark" ? (
             <FontAwesomeIcon icon={faSun} />
             ) : (

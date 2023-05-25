@@ -19,6 +19,11 @@ a{
         color: white;
         border: none !important;
     }
+    @media(min-width: 900px){
+        #button{
+            display: none !important;
+        }
+    }
     #buttonSun{
         min-width: 40px;
         min-height: 40px;

@@ -20,19 +20,22 @@
                 min-width: 40px;
                 min-height: 40px;
                 font-size: 20px;
-                background-color: var(--color-primary);
                 color: white;
-                border: none !important;
-                
+                // border-radius: 100% !important;
             }
+            @media(min-width:900px){
+                #button2 , #buttonSun2{
+                    display: none !important;
+                }
+            }
+
             #buttonSun2{
                 min-width: 40px;
                 min-height: 40px;
                 font-size: 20px;
-                background-color: var(--color-primary);
                 color: yellow;
-                border: none !important;
-                
+                // border-radius: 100% !important;
+
             }
         }
         
