@@ -9,29 +9,33 @@ a{
 .themeBox{
     min-width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 0px 10px;
+    padding: 0px 10px !important;
     #button{
         min-width: 40px;
         min-height: 40px;
         font-size: 20px;
-        background-color: var(--color-primary);
-        color: white;
-        border: none !important;
     }
-    @media(min-width: 900px){
-        #button{
-            display: none !important;
-        }
-    }
+
     #buttonSun{
         min-width: 40px;
         min-height: 40px;
         font-size: 20px;
-        background-color: var(--color-primary);
-        color: yellow;
-        border: none !important;
         
     }
 }
 
+    @media(min-width: 900px){
+        .themeBox{
+            justify-content: flex-end !important;
+        }
+        #button{
+            display: none !important;
+        }
+    }
+
+    @media(max-width: 900px){
+        .themeBox{
+            justify-content: space-between !important;
+        }
+        
+    }

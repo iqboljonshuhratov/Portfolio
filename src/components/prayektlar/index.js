@@ -93,20 +93,20 @@ export default function Prayektlar() {
       title: "Loyihada qo‘llanilgan kutubxonalar: React, Sass",
       link: "https://reactkorinish.netlify.app/",
     },
-    {
-      imgLink:
-        "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347451380_561986982750016_7057183982176312124_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=7EVJGQjbXJEAX8miNGY&_nc_oc=AQn9FwxrJe-f6f5rCN7FQvGt5EIJVJ713_m99GDYm0HeXCkYxeg2S_qpRYL7qOFun3g&_nc_ht=scontent.ftas9-1.fna&oh=00_AfBlLcwxJgMUEtuen0FdNuoNNIqdf0szXOXyG1AspS8uXA&oe=646F4411",
-      title:
-        "Loyiha moslashuvchan. Loyihada qo‘llanilgan kutubxonalar: HTML, Sass",
-      link: "https://loyha01.netlify.app/",
-    },
-    {
-      imgLink:
-        "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347595223_3447819388881002_6314880019281173614_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=jMnwWa9TygsAX967hoZ&_nc_ht=scontent.ftas9-1.fna&oh=00_AfDB0cJ4RzozvlOF-R92wsMFrwqL3YVIk5_UD6gBsqhPeA&oe=646F400F",
-      title:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem ad reprehenderit ullam quaerat ab",
-      link: "https://loyha5.netlify.app/",
-    },
+    // {
+    //   imgLink:
+    //     "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347451380_561986982750016_7057183982176312124_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=7EVJGQjbXJEAX8miNGY&_nc_oc=AQn9FwxrJe-f6f5rCN7FQvGt5EIJVJ713_m99GDYm0HeXCkYxeg2S_qpRYL7qOFun3g&_nc_ht=scontent.ftas9-1.fna&oh=00_AfBlLcwxJgMUEtuen0FdNuoNNIqdf0szXOXyG1AspS8uXA&oe=646F4411",
+    //   title:
+    //     "Loyiha moslashuvchan. Loyihada qo‘llanilgan kutubxonalar: HTML, Sass",
+    //   link: "https://loyha01.netlify.app/",
+    // },
+    // {
+    //   imgLink:
+    //     "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347595223_3447819388881002_6314880019281173614_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=jMnwWa9TygsAX967hoZ&_nc_ht=scontent.ftas9-1.fna&oh=00_AfDB0cJ4RzozvlOF-R92wsMFrwqL3YVIk5_UD6gBsqhPeA&oe=646F400F",
+    //   title:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem ad reprehenderit ullam quaerat ab",
+    //   link: "https://loyha5.netlify.app/",
+    // },
    
     // {
     //   imgLink: reactjpg,
