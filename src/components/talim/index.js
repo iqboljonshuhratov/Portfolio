@@ -17,14 +17,14 @@ export default function Talim() {
     <div class={`ozimHaqimdaBox mb-5 p-2 ${theme == "dark" ? "" : "rang"}`}>
       {change == false ? (
         <div className={`themeBox`}>
-          <button id="button" className={`bg-${theme} text-${theme == "dark" ? "light" : "dark"}`} onClick={Exchange}>
+          <button id="button" className={` text-${theme == "dark" ? "light" : "dark"}`} onClick={Exchange}>
             {change == true ? (
               <FontAwesomeIcon icon={faSquareXmark} />
             ) : (
               <FontAwesomeIcon icon={faBars} />
             )}
           </button>
-          <button id="buttonSun" className={`bg-${theme} text-${theme == "dark" ? "light" : "dark"}`} onClick={toggleTheme}>
+          <button id="buttonSun" className={` text-${theme == "dark" ? "" : "dark"}`} onClick={toggleTheme}>
             {theme == "dark" ? (
               <FontAwesomeIcon icon={faSun} />
             ) : (
@@ -40,7 +40,7 @@ export default function Talim() {
         <h1
           className={`text-${theme == "dark" ? "light" : "dark"} text-center`}
         >
-          Ta'lim
+          Education
         </h1>
       </div>
       {/* sarlovha tugadi va manzil qiisim boshlandi */}
@@ -59,15 +59,14 @@ export default function Talim() {
             />
           </div>
           <div className="text-box">
-            <h3 className={`text-${theme == "dark" ? "light" : "dark"} p-3`}>
+            {/* <h3 className={`text-${theme == "dark" ? "light" : "dark"} p-3`}>
               Ta'lim olgan muassasa
-            </h3>
+            </h3> */}
             <p className={`text-${theme == "dark" ? "light" : "dark"} p-3`}>
-              "<a className={`text-${theme == "dark" ? "light" : "dark"}`} href="https://online.pdp.uz/about-us">PDP ACADEMY</a>"
-              da ta'lim olgan. <br />
-              PDP Academyda foundation muvaffaqiyatli tugatilgan. <br />
-              Asosiy kursga imtihon asosida qabul qilingan. <br />
-              Asosiy kursda frontend dasturlash tilini o'rgangan. <br />
+              Studied at "<a className={`text-${theme == "dark" ? "light" : "dark"}`} href="https://online.pdp.uz/about-us">PDP ACADEMY</a>". <br />
+              The foundation was successfully completed at PDP Academy. <br />
+              He was admitted to the main course on the basis of an examination. <br />
+              He studied frontend programming language in the basic course. <br />
               
             </p>
           </div>

@@ -18,14 +18,22 @@ export default function OzimHaqimda() {
     <div class={`ozimHaqimdaBox mb-5 p-2 ${theme == "dark" ? "" : "rang"}`}>
       {change == false ? (
         <div className={`themeBox`}>
-          <button id="button" className={`bg-${theme} text-${theme == "dark" ? "light" : "dark"}`} onClick={Exchange}>
+          <button
+            id="button"
+            className={` text-${theme == "dark" ? "light" : "dark"}`}
+            onClick={Exchange}
+          >
             {change == true ? (
               <FontAwesomeIcon icon={faSquareXmark} />
             ) : (
               <FontAwesomeIcon icon={faBars} />
             )}
           </button>
-          <button id="buttonSun" className={`bg-${theme} text-${theme == "dark" ? "light" : "dark"}`} onClick={toggleTheme}>
+          <button
+            id="buttonSun"
+            className={` text-${theme == "dark" ? "" : "dark"}`}
+            onClick={toggleTheme}
+          >
             {theme == "dark" ? (
               <FontAwesomeIcon icon={faSun} />
             ) : (
@@ -42,7 +50,7 @@ export default function OzimHaqimda() {
             theme == "dark" ? "light" : "dark"
           } text-center`}
         >
-          Bog'lanish
+          Contact me
         </h1>
       </div>
       {/* sarlovha tugadi va manzil qiisim boshlandi */}
@@ -50,35 +58,34 @@ export default function OzimHaqimda() {
       <div className="contact-box d-flex justify-content-between">
         <div className="contactInfo">
           <h4 className={`text-${theme == "dark" ? "light" : "dark"} mb-1`}>
-            Aloqa
+            Get in Touch
           </h4>
-          {/* <p className={`text-${theme == "dark" ? "light" : "dark"} mb-3`}>
-            {" "}
-            Agar meni kompaniyangizga mos deb bilsangiz, <br /> men bilan
-            bog'laning{" "}
-          </p> */}
+          <p className={`text-${theme == "dark" ? "light" : "dark"} mb-3 pe-5`}>
+            Here you can find the contact details, if you find me suitible for
+            your company please contact me and let me do my best!.
+          </p>
           <span
             className={`text-${theme == "dark" ? "light" : "dark"} fw-bold`}
           >
-            Familiya, ism
+            Name
           </span>
           <p className={`text-${theme == "dark" ? "light" : "dark"}`}>
-            Shuhratov Iqboljon
+            Shukhratov Iqboljon
           </p>
           <br />
           <span
             className={`text-${theme == "dark" ? "light" : "dark"} fw-bold`}
           >
-            Manzil
+            Address
           </span>
           <p className={`text-${theme == "dark" ? "light" : "dark"}`}>
-            Toshkent, Oʻzbekiston
+            Tashkent, Uzbekistan
           </p>
           <br />
           <span
             className={`text-${theme == "dark" ? "light" : "dark"} fw-bold`}
           >
-            Elektron pochta
+            Email
           </span>
           <p className={`text-${theme == "dark" ? "light" : "dark"}`}>
             <a href="#">shuhratjonoviqboljon79@gmail.com</a>
@@ -91,7 +98,7 @@ export default function OzimHaqimda() {
           </span>
           <p className={`text-${theme == "dark" ? "light" : "dark"}`}>
             <a href="https://github.com/iqboljonshuhratov" target="_blank">
-              GitHub profil
+              Visit GitHub profile
             </a>
           </p>
         </div>
@@ -101,19 +108,19 @@ export default function OzimHaqimda() {
               theme == "dark" ? "light" : "dark"
             } fw-bold mb-3`}
           >
-            Xabar yuborish
+            Message me
           </h3>
           <div className="fullname-box mb-3">
-            <input type="text" placeholder="ism" />
-            <input type="number" placeholder="nomer" />
+            <input type="text" placeholder="Name" />
+            <input type="number" placeholder="Phone" />
           </div>
           <textarea
             name="text"
             id=""
-            placeholder="malumot"
+            placeholder="Message"
             className="malumotInput rounded mb-5"
           ></textarea>
-          <button className="rounded">Yuborish</button>
+          <button className="rounded">Submit</button>
         </div>
       </div>
     </div>

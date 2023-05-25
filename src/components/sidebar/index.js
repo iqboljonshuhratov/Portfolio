@@ -31,7 +31,7 @@ export default function Sidebar() {
     <div class={`sidebar shadow bg-${theme}`}>
       <div class={`content shadow-lg bg-${theme}`}>
       <div className={`themeBox2`}>
-      <button id="button2" className={`bg-${theme} text-${theme == "dark" ? "light" : "dark"}`} onClick={Exchange}>
+      <button id="button2" className={`text-${theme == "dark" ? "light" : "dark"}`} onClick={Exchange}>
           {change == true ? (
             <FontAwesomeIcon icon={faSquareXmark} />
             ) : (
@@ -39,7 +39,7 @@ export default function Sidebar() {
               )}
         </button>
 
-        <button id="buttonSun2" className={`bg-${theme} text-${theme == "dark" ? "light" : "dark"}`} onClick={toggleTheme}>
+        <button id="buttonSun2" className={` text-${theme == "dark" ? "" : "dark"}`} onClick={toggleTheme}>
           {theme == "dark" ? (
             <FontAwesomeIcon icon={faSun} />
             ) : (
@@ -63,38 +63,38 @@ export default function Sidebar() {
           <li
             className={`text-${
               info == "boshSahifa" ? "danger" : ""
-            } fs-5 fw-bold`}
+            } fs-5`}
             onClick={BoshSahifa1}
           >
-            <FontAwesomeIcon icon={faHome} /> Bosh Saxifa
+            <FontAwesomeIcon icon={faHome} /> Home
           </li>
           <p></p>
           <li
-            className={`text-${info == "talim" ? "danger" : ""} fs-5 fw-bold`}
+            className={`text-${info == "talim" ? "danger" : ""} fs-5`}
             onClick={Talim1}
           >
             {" "}
-            <FontAwesomeIcon icon={faBook} /> Ta'lim
+            <FontAwesomeIcon icon={faBook} /> Education
           </li>
           <p></p>
           <li
             className={`text-${
               info == "prayektlar" ? "danger" : ""
-            } fs-5 fw-bold`}
+            } fs-5`}
             onClick={Prayektlar1}
           >
             {" "}
-            <FontAwesomeIcon icon={faBuilding} /> Loyihalar
+            <FontAwesomeIcon icon={faBuilding} /> Portfolio
           </li>
           <p></p>
           <li
             className={`text-${
               info == "ozimHaqimda" ? "danger" : ""
-            } fs-5 fw-bold`}
+            } fs-5`}
             onClick={OzimHaqimda1}
           >
             {" "}
-            <FontAwesomeIcon icon={faContactCard} /> Ulanish
+            <FontAwesomeIcon icon={faContactCard} /> Contact
           </li>
         </ul>
 

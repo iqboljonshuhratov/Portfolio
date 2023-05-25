@@ -36,63 +36,70 @@ export default function Prayektlar() {
     {
       imgLink: portfolio,
       title:
-        "Loyiha moslashuvchan. Loyihada qo‘llanilgan kutubxonalar: React, Sass, Bootstrap, Font Awesome, ThemaContext, useState",
+        "The project is flexible. Libraries used in the project: React, Sass, Bootstrap, Font Awesome, ThemaContext, useState",
       link: "https://portfolio-iqboljon.netlify.app/",
     },
     {
       imgLink:
         "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347264040_254520530468293_2966080841737429538_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=EVk_YcKQ86gAX_TLgMT&_nc_ht=scontent.ftas9-1.fna&oh=00_AfC8eBRygGpEkKArmH516Wa8I1wkBRHtY57ymVEMX5ut_w&oe=646E7172",
       title:
-        "Loyihada qo‘llanilgan kutubxonalar: JavaScript, Sass, Bootstrap, Font Awesome, REST API Methods: GET, POST, PUT, DELETE",
+        "Libraries used in the project: JavaScript, Sass, Bootstrap, Font Awesome, REST API Methods: GET, POST, PUT, DELETE",
       link: "https://js-loyha-5.netlify.app/",
     },
     {
       imgLink: olcha,
       title:
-        "Loyihada qo‘llanilgan kutubxonalar: React, Sass, Bootstrap, ThemaContext, UseState",
+        "Libraries used in the project: React, Sass, Bootstrap, ThemaContext, UseState",
       link: "https://olchaloyha.netlify.app/",
     },
     {
       imgLink:
         "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347242842_640498821276516_1257941143219214786_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=q__EKCgjiXMAX8Z8vWn&_nc_ht=scontent.ftas9-1.fna&oh=00_AfCkxK381P07jag3UjphWJV340U6AzEsnG9xYbT5WM5atQ&oe=646F16B5",
-      title: "Loyihada qo‘llanilgan kutubxonalar: JavaScript, Sass, Bootstrap",
+      title: "Libraries used in the project: JavaScript, Sass, Bootstrap",
       link: "https://js-loyha1.netlify.app/",
     },
     {
       imgLink:
         "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347394378_602869448457619_8150432138663987791_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=4bm_J8D_OzgAX-K6qIU&_nc_ht=scontent.ftas9-1.fna&oh=00_AfBP8txyPbcYHAjv1svmKZWu-6-8w9k_DDgLl0Rm8dIsBQ&oe=646EC61C",
-      title: "Loyihada qo‘llanilgan kutubxonalar: JavaScript, Sass",
+      title: "Libraries used in the project: JavaScript, Sass",
       link: "https://js-loyha2.netlify.app/",
     },
     {
       imgLink: ThemaContextimg,
       title:
-        "Loyihada qo‘llanilgan kutubxonalar: React, Sass, Bootstrap, React Bootstrap, Font Awesome, ThemaContext, useState",
+        "Libraries used in the project: React, Sass, Bootstrap, React Bootstrap, Font Awesome, ThemaContext, useState",
       link: "https://reactbootstraployha.netlify.app/#memes",
     },
     {
       imgLink:
         "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347408868_954593698905823_2884010330645569752_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=nK0ae6CrIfwAX-zZ6p4&_nc_ht=scontent.ftas9-1.fna&oh=00_AfBN1RyIoAvyZuAwJtfyNoYGsd1ag7aAAUGAQNmG8pbuMg&oe=646E4F9F",
-      title: "Loyihada qo‘llanilgan kutubxonalar: JavaScript, Sass",
+      title: "Libraries used in the project: JavaScript, Sass",
       link: "https://js-loyha3.netlify.app/",
     },
     {
       imgLink: styledImg,
       title:
-        "Loyihada qo‘llanilgan kutubxonalar: React, Bootstrap, React Bootstrap, Font Awesome, Styled-Components",
+        "Libraries used in the project: React, Bootstrap, React Bootstrap, Font Awesome, Styled-Components",
       link: "https://styledcomponentsloyha.netlify.app/",
+    },
+    {
+      imgLink: "https://scontent.ftas7-1.fna.fbcdn.net/v/t39.30808-6/347235972_3442901459303253_6801743439120119219_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ilt-e2mfrwoAX9Qh4oU&_nc_ht=scontent.ftas7-1.fna&oh=00_AfBes5LVx7maEnf4Gy43RnkpMCEKi5Sd-_EKPpQCEKb7zw&oe=64746CCC",
+      title: "Libraries used in the project: HTML, Sass, JavaScript, setInterval, LocalStorage",
+      link: "https://pomodoro-loyha.netlify.app/",
     },
     {
       imgLink: whatsapp,
       title:
-        "Loyihada qo‘llanilgan kutubxonalar: React, Sass, Bootstrap, Font Awesome, ThemaContext, useState",
+        "Libraries used in the project: React, Sass, Bootstrap, Font Awesome, ThemaContext, useState",
       link: "https://whatsapployha.netlify.app/",
     },
     {
       imgLink: korinish,
-      title: "Loyihada qo‘llanilgan kutubxonalar: React, Sass",
+      title: "Libraries used in the project: React, css",
       link: "https://reactkorinish.netlify.app/",
     },
+
+
     // {
     //   imgLink:
     //     "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347451380_561986982750016_7057183982176312124_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=7EVJGQjbXJEAX8miNGY&_nc_oc=AQn9FwxrJe-f6f5rCN7FQvGt5EIJVJ713_m99GDYm0HeXCkYxeg2S_qpRYL7qOFun3g&_nc_ht=scontent.ftas9-1.fna&oh=00_AfBlLcwxJgMUEtuen0FdNuoNNIqdf0szXOXyG1AspS8uXA&oe=646F4411",
@@ -194,14 +201,14 @@ export default function Prayektlar() {
     <div class={`prayektBox ${theme == "dark" ? "" : "rang"}`}>
       {change == false ? (
         <div className={`themeBox`}>
-          <button id="button" className={`bg-${theme} text-${theme == "dark" ? "light" : "dark"}`} onClick={Exchange}>
+          <button id="button" className={`text-${theme == "dark" ? "light" : "dark"}`} onClick={Exchange}>
             {change == true ? (
               <FontAwesomeIcon icon={faSquareXmark} />
             ) : (
               <FontAwesomeIcon icon={faBars} />
             )}
           </button>
-          <button id="buttonSun" className={`bg-${theme} text-${theme == "dark" ? "light" : "dark"}`} onClick={toggleTheme}>
+          <button id="buttonSun" className={`text-${theme == "dark" ? "" : "dark"}`} onClick={toggleTheme}>
             {theme == "dark" ? (
               <FontAwesomeIcon icon={faSun} />
             ) : (
@@ -219,7 +226,7 @@ export default function Prayektlar() {
         <h1
           className={`text-center text-${theme == "dark" ? "light" : "dark"}`}
         >
-          Loyihalar
+          Portfolio
         </h1>
         <div className="loyha-box">
           <div className="row">
@@ -233,7 +240,7 @@ export default function Prayektlar() {
 
                   <a href={`${v.link}`} target="_blank">
                     <button className={`p-1 rounded loyhalink`}>
-                      loyhaga o'tish
+                      Portfolio link
                     </button>
                   </a>
                 </div>

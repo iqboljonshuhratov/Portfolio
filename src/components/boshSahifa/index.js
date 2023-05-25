@@ -25,14 +25,14 @@ export default function BoshSaxifa() {
     <div class={`mainBox mb-5 ${theme == "dark" ? "" : "rang"}`}>
       {change == false ? (
         <div className={`themeBox`}>
-          <button id="button" className={`bg-${theme} text-${theme == "dark" ? "light" : "dark"}`} onClick={Exchange}>
+          <button id="button" className={` text-${theme == "dark" ? "light" : "dark"}`} onClick={Exchange}>
             {change == true ? (
               <FontAwesomeIcon icon={faSquareXmark} />
             ) : (
               <FontAwesomeIcon icon={faBars} />
             )}
           </button>
-          <button id="buttonSun" className={`bg-${theme} text-${theme == "dark" ? "light" : "dark"}`} onClick={toggleTheme}>
+          <button id="buttonSun" className={` text-${theme == "dark" ? "" : "dark"}`} onClick={toggleTheme}>
             {theme == "dark" ? (
               <FontAwesomeIcon icon={faSun} />
             ) : (
@@ -56,7 +56,7 @@ export default function BoshSaxifa() {
         } fw-bold text-center`}
       >
         {" "}
-        Iqboljon Shuhratov{" "}
+        Iqboljon Shukhratov{" "}
       </h1>
       <p
         className={`text-${

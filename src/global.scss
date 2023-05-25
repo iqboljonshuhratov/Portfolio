@@ -13,13 +13,18 @@ a{
     #button{
         min-width: 40px;
         min-height: 40px;
-        font-size: 20px;
+        font-size: 30px;
+        border: none !important;
+        background-color: transparent;
     }
 
     #buttonSun{
         min-width: 40px;
         min-height: 40px;
-        font-size: 20px;
+        font-size: 30px;
+        color: yellow;
+        border: none !important;
+        background-color: transparent;
         
     }
 }
