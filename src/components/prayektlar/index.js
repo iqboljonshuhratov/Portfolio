@@ -83,8 +83,10 @@ export default function Prayektlar() {
       link: "https://styledcomponentsloyha.netlify.app/",
     },
     {
-      imgLink: "https://scontent.ftas7-1.fna.fbcdn.net/v/t39.30808-6/347235972_3442901459303253_6801743439120119219_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ilt-e2mfrwoAX9Qh4oU&_nc_ht=scontent.ftas7-1.fna&oh=00_AfBes5LVx7maEnf4Gy43RnkpMCEKi5Sd-_EKPpQCEKb7zw&oe=64746CCC",
-      title: "Libraries used in the project: HTML, Sass, JavaScript, setInterval, LocalStorage",
+      imgLink:
+        "https://scontent.ftas7-1.fna.fbcdn.net/v/t39.30808-6/347235972_3442901459303253_6801743439120119219_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ilt-e2mfrwoAX9Qh4oU&_nc_ht=scontent.ftas7-1.fna&oh=00_AfBes5LVx7maEnf4Gy43RnkpMCEKi5Sd-_EKPpQCEKb7zw&oe=64746CCC",
+      title:
+        "Libraries used in the project: HTML, Sass, JavaScript, setInterval, LocalStorage",
       link: "https://pomodoro-loyha.netlify.app/",
     },
     {
@@ -98,7 +100,6 @@ export default function Prayektlar() {
       title: "Libraries used in the project: React, css",
       link: "https://reactkorinish.netlify.app/",
     },
-
 
     // {
     //   imgLink:
@@ -114,7 +115,7 @@ export default function Prayektlar() {
     //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem ad reprehenderit ullam quaerat ab",
     //   link: "https://loyha5.netlify.app/",
     // },
-   
+
     // {
     //   imgLink: reactjpg,
     //   title: "6Loyihada qo‘llanilgan kutubxonalar: React, Sass, Bootstrap",
@@ -126,16 +127,12 @@ export default function Prayektlar() {
     //   link: "https://reactloyha3.netlify.app/",
     // },
 
-
     // {
     //   imgLink: korinish2,
     //   title: "9Loyihada qo‘llanilgan kutubxonalar: React, Sass",
     //   link: "https://reactkorinish2.netlify.app/",
     // },
 
-   
-   
-    
     // {
     //   imgLink:
     //     "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347433810_950777776250350_2830776784148130300_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=uPf57y8VQwMAX97pkP_&_nc_ht=scontent.ftas9-1.fna&oh=00_AfCuGyvdqpMFyFGA_WZJckCztajccn0d9C5nysMlMywMWg&oe=646FF319",
@@ -157,7 +154,7 @@ export default function Prayektlar() {
     //     "17Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem ad reprehenderit ullam quaerat ab",
     //   link: "https://loyha4.netlify.app/",
     // },
-    
+
     // {
     //   imgLink:
     //     "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347419934_771042534473837_5679663727633726626_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Hl8gNu0Ij-YAX_zO1F8&_nc_ht=scontent.ftas9-1.fna&oh=00_AfDBZqLAltKQF75XzbcXi1IsBFxh_RoZjrylrw3EGC6QqQ&oe=646E2D4D",
@@ -201,24 +198,58 @@ export default function Prayektlar() {
     <div class={`prayektBox ${theme == "dark" ? "" : "rang"}`}>
       {change == false ? (
         <div className={`themeBox`}>
-          <button id="button" className={`text-${theme == "dark" ? "light" : "dark"}`} onClick={Exchange}>
+          <button
+            id="button"
+            className={` text-${theme == "dark" ? "light" : "dark"}`}
+            onClick={Exchange}
+          >
             {change == true ? (
               <FontAwesomeIcon icon={faSquareXmark} />
             ) : (
               <FontAwesomeIcon icon={faBars} />
             )}
           </button>
-          <button id="buttonSun" className={`text-${theme == "dark" ? "" : "dark"}`} onClick={toggleTheme}>
+          <div
+            className={`mode ${theme == "dark" ? "" : "mode_dark"}`}
+            onClick={toggleTheme}
+          >
+            <div className={`btn ${theme == "dark" ? "" : "dark"}`}>
+              <div className={`btn_icon_container`}>
+                {theme == "dark" ? (
+                  <FontAwesomeIcon className="sun" icon={faSun} />
+                ) : (
+                  <FontAwesomeIcon className="moon" icon={faMoon} />
+                )}
+              </div>
+            </div>
+          </div>
+          {/* <button id="buttonSun" className={` text-${theme == "dark" ? "" : "dark"}`} onClick={toggleTheme}>
             {theme == "dark" ? (
               <FontAwesomeIcon icon={faSun} />
             ) : (
               <FontAwesomeIcon icon={faMoon} />
             )}
-          </button>
+          </button> */}
         </div>
       ) : (
         ""
       )}
+      <div className="themeBox">
+        <div
+          className={`mode2 ${theme == "dark" ? "" : "mode_dark2"}`}
+          onClick={toggleTheme}
+        >
+          <div className={`btn ${theme == "dark" ? "" : "dark"}`}>
+            <div className={`btn_icon_container`}>
+              {theme == "dark" ? (
+                <FontAwesomeIcon className="sun" icon={faSun} />
+              ) : (
+                <FontAwesomeIcon className="moon" icon={faMoon} />
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* theme qism tugadi */}
 

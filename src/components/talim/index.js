@@ -17,24 +17,59 @@ export default function Talim() {
     <div class={`ozimHaqimdaBox mb-5 p-2 ${theme == "dark" ? "" : "rang"}`}>
       {change == false ? (
         <div className={`themeBox`}>
-          <button id="button" className={` text-${theme == "dark" ? "light" : "dark"}`} onClick={Exchange}>
+          <button
+            id="button"
+            className={` text-${theme == "dark" ? "light" : "dark"}`}
+            onClick={Exchange}
+          >
             {change == true ? (
               <FontAwesomeIcon icon={faSquareXmark} />
             ) : (
               <FontAwesomeIcon icon={faBars} />
             )}
           </button>
-          <button id="buttonSun" className={` text-${theme == "dark" ? "" : "dark"}`} onClick={toggleTheme}>
+          <div
+            className={`mode ${theme == "dark" ? "" : "mode_dark"}`}
+            onClick={toggleTheme}
+          >
+            <div className={`btn ${theme == "dark" ? "" : "dark"}`}>
+              <div className={`btn_icon_container`}>
+                {theme == "dark" ? (
+                  <FontAwesomeIcon className="sun" icon={faSun} />
+                ) : (
+                  <FontAwesomeIcon className="moon" icon={faMoon} />
+                )}
+              </div>
+            </div>
+          </div>
+          {/* <button id="buttonSun" className={` text-${theme == "dark" ? "" : "dark"}`} onClick={toggleTheme}>
             {theme == "dark" ? (
               <FontAwesomeIcon icon={faSun} />
             ) : (
               <FontAwesomeIcon icon={faMoon} />
             )}
-          </button>
+          </button> */}
         </div>
       ) : (
         ""
       )}
+      <div className="themeBox">
+        <div
+          className={`mode2 ${theme == "dark" ? "" : "mode_dark2"}`}
+          onClick={toggleTheme}
+        >
+          <div className={`btn ${theme == "dark" ? "" : "dark"}`}>
+            <div className={`btn_icon_container`}>
+              {theme == "dark" ? (
+                <FontAwesomeIcon className="sun" icon={faSun} />
+              ) : (
+                <FontAwesomeIcon className="moon" icon={faMoon} />
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+      
       {/* thema tugadi */}
       <div className="sarlovha mt-5 mb-4">
         <h1
@@ -63,11 +98,13 @@ export default function Talim() {
               Ta'lim olgan muassasa
             </h3> */}
             <p className={`text-${theme == "dark" ? "light" : "dark"} p-3`}>
-              Studied at "<a className={`text-${theme == "dark" ? "light" : "dark"}`} href="https://online.pdp.uz/about-us">PDP ACADEMY</a>". <br />
-              The foundation was successfully completed at PDP Academy. <br />
-              He was admitted to the main course on the basis of an examination. <br />
-              He studied frontend programming language in the basic course. <br />
-              
+              He was admitted to the main course on the basis of an examination.{" "}
+              <br />
+              Admitted to the main course on the basis of an examination. <br />
+              He studied frontend programming language in the basic course.{" "}
+              <br />
+              Mastered frontend development technologies (based on React
+              library). <br />
             </p>
           </div>
         </div>

@@ -56,10 +56,7 @@
         font-size: 70px;
     }
     
-    p{
-    //    font-size: 36px;
-    //    margin: 0;
-    }
+    
     
     
     .ijtimoiyTarmoqlar {
@@ -128,12 +125,12 @@
             position: absolute;
             right: 0;
             bottom: 0;
-            animation-name: qimilla;
+            animation-name: movement;
             animation-duration: 1s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
             
-            @keyframes qimilla {
+            @keyframes movement {
                 from {
                     transform: rotate(0);
                 }
@@ -158,3 +155,5 @@
 
 }
 
+
+// bu alohida tun kun rejimi uchun

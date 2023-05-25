@@ -25,24 +25,53 @@ export default function BoshSaxifa() {
     <div class={`mainBox mb-5 ${theme == "dark" ? "" : "rang"}`}>
       {change == false ? (
         <div className={`themeBox`}>
-          <button id="button" className={` text-${theme == "dark" ? "light" : "dark"}`} onClick={Exchange}>
+          <button
+            id="button"
+            className={` text-${theme == "dark" ? "light" : "dark"}`}
+            onClick={Exchange}
+          >
             {change == true ? (
               <FontAwesomeIcon icon={faSquareXmark} />
             ) : (
               <FontAwesomeIcon icon={faBars} />
             )}
           </button>
-          <button id="buttonSun" className={` text-${theme == "dark" ? "" : "dark"}`} onClick={toggleTheme}>
+          <div className={`mode ${theme == "dark" ? "" : "mode_dark"}`} onClick={toggleTheme}>
+            <div className={`btn ${theme == "dark" ? "" : "dark"}`}>
+              <div className={`btn_icon_container`}>
+                {theme == "dark" ? (
+                  <FontAwesomeIcon className="sun" icon={faSun} />
+                ) : (
+                  <FontAwesomeIcon className="moon" icon={faMoon} />
+                )}
+              </div>
+            </div>
+          </div>
+          {/* <button id="buttonSun" className={` text-${theme == "dark" ? "" : "dark"}`} onClick={toggleTheme}>
             {theme == "dark" ? (
               <FontAwesomeIcon icon={faSun} />
             ) : (
               <FontAwesomeIcon icon={faMoon} />
             )}
-          </button>
+          </button> */}
         </div>
       ) : (
         ""
       )}
+      <div className="themeBox">
+      <div className={`mode2 ${theme == "dark" ? "" : "mode_dark2"}`} onClick={toggleTheme}>
+            <div className={`btn ${theme == "dark" ? "" : "dark"}`}>
+              <div className={`btn_icon_container`}>
+                {theme == "dark" ? (
+                  <FontAwesomeIcon className="sun" icon={faSun} />
+                ) : (
+                  <FontAwesomeIcon className="moon" icon={faMoon} />
+                )}
+              </div>
+            </div>
+          </div>
+      </div>
+
       {/* theme box */}
       <div class="ImgBox mt-5">
         <img class="rasm" src={logo} alt="Iqboljon" />

@@ -29,21 +29,49 @@ export default function OzimHaqimda() {
               <FontAwesomeIcon icon={faBars} />
             )}
           </button>
-          <button
-            id="buttonSun"
-            className={` text-${theme == "dark" ? "" : "dark"}`}
+          <div
+            className={`mode ${theme == "dark" ? "" : "mode_dark"}`}
             onClick={toggleTheme}
           >
+            <div className={`btn ${theme == "dark" ? "" : "dark"}`}>
+              <div className={`btn_icon_container`}>
+                {theme == "dark" ? (
+                  <FontAwesomeIcon className="sun" icon={faSun} />
+                ) : (
+                  <FontAwesomeIcon className="moon" icon={faMoon} />
+                )}
+              </div>
+            </div>
+          </div>
+          {/* <button id="buttonSun" className={` text-${theme == "dark" ? "" : "dark"}`} onClick={toggleTheme}>
             {theme == "dark" ? (
               <FontAwesomeIcon icon={faSun} />
             ) : (
               <FontAwesomeIcon icon={faMoon} />
             )}
-          </button>
+          </button> */}
         </div>
       ) : (
         ""
       )}
+      <div className="themeBox">
+        <div
+          className={`mode2 ${theme == "dark" ? "" : "mode_dark2"}`}
+          onClick={toggleTheme}
+        >
+          <div className={`btn ${theme == "dark" ? "" : "dark"}`}>
+            <div className={`btn_icon_container`}>
+              {theme == "dark" ? (
+                <FontAwesomeIcon className="sun" icon={faSun} />
+              ) : (
+                <FontAwesomeIcon className="moon" icon={faMoon} />
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* theme box yani tun kun rejimi tugadi */}
       <div className="sarlovha mb-4 mt-5">
         <h1
           className={`tex-sarlovha text-${
@@ -61,7 +89,7 @@ export default function OzimHaqimda() {
             Get in Touch
           </h4>
           <p className={`text-${theme == "dark" ? "light" : "dark"} mb-3 pe-5`}>
-            Here you can find the contact details, if you find me suitible for
+            Here, you can find the contact details, if you find me suitible for
             your company please contact me and let me do my best!.
           </p>
           <span
