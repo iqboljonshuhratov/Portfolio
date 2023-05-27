@@ -60,7 +60,7 @@ function App() {
                 <Sidebar></Sidebar>
               </div>
 
-              {info == "boshSahifa" ? <Routes> <Route path="/" element={<BoshSaxifa></BoshSaxifa>} /></Routes> : ""}
+              {info == "boshSahifa" ? <BoshSaxifa></BoshSaxifa> : ""}
               {info == "ozimHaqimda" ? <Routes> <Route path="/Contact" element={<OzimHaqimda />} /></Routes>   : ""}
               {info == "talim" ? <Routes> <Route path="/Education" element={<Talim></Talim>} /></Routes>  : ""}
               {info == "prayektlar" ? <Routes> <Route path="/Portfolio" element={<Prayektlar></Prayektlar>} /></Routes> : ""}

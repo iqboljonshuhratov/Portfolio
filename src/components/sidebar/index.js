@@ -89,7 +89,6 @@ export default function Sidebar() {
         {/* sarlovha qismim tugadi */}
 
         <ul className={`text-${theme == "dark" ? "light" : "dark"} mt-5`}>
-          <Link to={`/`}>
             <li
               className={`text-${
                 info == "boshSahifa" ? "danger" : (theme == "dark" ? "light" : "dark")
@@ -98,7 +97,6 @@ export default function Sidebar() {
             >
               <FontAwesomeIcon icon={faHome} /> Home
             </li>
-          </Link>
 
           <p></p>
           <Link to={`/Education`}>
