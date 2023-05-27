@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { faRectangleXmark } from "@fortawesome/free-regular-svg-icons";
 import {
   faBars,
@@ -37,8 +38,10 @@ export default function Sidebar() {
     Prayektlar1,
   } = useContext(ThemaContext);
   return (
-    <div class={`sidebar shadow bg-${theme}`}>
-      <div class={`content shadow-lg bg-${theme}`}>
+    <div class={`sidebar shadow bg-${theme} ${change == true ? "" : "hide"}`}>
+      <div
+        class={`content shadow-lg bg-${theme} ${change == true ? "" : "hide"}`}
+      >
         {change == true ? (
           <div className={`themeBox2`}>
             <button
@@ -46,11 +49,14 @@ export default function Sidebar() {
               className={`text-${theme == "dark" ? "light" : "dark"}`}
               onClick={Exchange}
             >
-              {
-                change == true ? <FontAwesomeIcon className="iconXmark" icon={faRectangleXmark} /> :
+              {change == true ? (
+                <FontAwesomeIcon
+                  className="iconXmark"
+                  icon={faRectangleXmark}
+                />
+              ) : (
                 <FontAwesomeIcon className="iconXmark" icon={faBars} />
-
-              }
+              )}
             </button>
 
             <div
@@ -83,36 +89,53 @@ export default function Sidebar() {
         {/* sarlovha qismim tugadi */}
 
         <ul className={`text-${theme == "dark" ? "light" : "dark"} mt-5`}>
-          <li
-            className={`text-${info == "boshSahifa" ? "danger" : ""} fs-5`}
-            onClick={BoshSahifa1}
-          >
-            <FontAwesomeIcon icon={faHome} /> Home
-          </li>
+          <Link to={`/`}>
+            <li
+              className={`text-${
+                info == "boshSahifa" ? "danger" : "light"
+              } fs-5`}
+              onClick={BoshSahifa1}
+            >
+              <FontAwesomeIcon icon={faHome} /> Home
+            </li>
+          </Link>
+
           <p></p>
-          <li
-            className={`text-${info == "talim" ? "danger" : ""} fs-5`}
-            onClick={Talim1}
-          >
-            {" "}
-            <FontAwesomeIcon icon={faBook} /> Education
-          </li>
+          <Link to={`/Education`}>
+            <li
+              className={`text-${info == "talim" ? "danger" : "light"} fs-5`}
+              onClick={Talim1}
+            >
+              {" "}
+              <FontAwesomeIcon icon={faBook} /> Education
+            </li>
+          </Link>
+
           <p></p>
-          <li
-            className={`text-${info == "prayektlar" ? "danger" : ""} fs-5`}
-            onClick={Prayektlar1}
-          >
-            {" "}
-            <FontAwesomeIcon icon={faBuilding} /> Portfolio
-          </li>
+          <Link to={`/Portfolio`}>
+            <li
+              className={`text-${
+                info == "prayektlar" ? "danger" : "light"
+              } fs-5`}
+              onClick={Prayektlar1}
+            >
+              {" "}
+              <FontAwesomeIcon icon={faBuilding} /> Portfolio
+            </li>
+          </Link>
+
           <p></p>
-          <li
-            className={`text-${info == "ozimHaqimda" ? "danger" : ""} fs-5`}
-            onClick={OzimHaqimda1}
-          >
-            {" "}
-            <FontAwesomeIcon icon={faContactCard} /> Contact
-          </li>
+          <Link to={`/Contact`}>
+            <li
+              className={`text-${
+                info == "ozimHaqimda" ? "danger" : "light"
+              } fs-5`}
+              onClick={OzimHaqimda1}
+            >
+              {" "}
+              <FontAwesomeIcon icon={faContactCard} /> Contact
+            </li>
+          </Link>
         </ul>
 
         {/* barchasi tugadi */}

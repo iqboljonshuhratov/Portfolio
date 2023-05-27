@@ -1,4 +1,14 @@
 @import url('../../global.scss');
+
+// .link{
+//     text-decoration: none;
+//     color: black;
+
+//     &:hover{
+//         color: var(--color-primary);
+//     }
+// }
+
 .sidebar{
     min-width: 300px !important;
     height: 100vh;
@@ -55,7 +65,7 @@
                 transition: 0.3s !important;
                 
                 &:hover{
-                    color: var(--color-primary);
+                    color: var(--color-primary) !important;
                     // transform: translateX(5px);
                     // transform: translateY(-5px);
                 }
@@ -64,6 +74,7 @@
     
     }
 }
+
 
 @media (max-width: 900px){
     *{
