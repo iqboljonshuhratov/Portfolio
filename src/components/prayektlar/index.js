@@ -49,7 +49,7 @@ export default function Prayektlar() {
     {
       imgLink: olcha,
       title:
-        "Libraries used in the project: React, Sass, Bootstrap, ThemaContext, UseState",
+        "Libraries used in the project: React, CSS, Bootstrap, ThemaContext, UseState",
       link: "https://olchaloyha.netlify.app/",
     },
     {

@@ -4,7 +4,7 @@ const ThemaContext = React.createContext({
   theme: "dark",
   toggleTheme: () => {},
   Exchange: () => {},
-  change: true,
+  change: false,
   info: 'boshSahifa', 
   BoshSahifa1: () => {},
   OzimHaqimda1: () => {}, 
