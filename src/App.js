@@ -24,6 +24,7 @@ function App() {
 
   const BoshSahifa1 = () => {
     setInfo((info) => (info != "boshSahifa" ? "boshSahifa" : info));
+    
   };
 
   const OzimHaqimda1 = () => {
@@ -59,11 +60,12 @@ function App() {
               <div className="Hide">
                 <Sidebar></Sidebar>
               </div>
-
-              {info == "boshSahifa" ? <BoshSaxifa></BoshSaxifa> : ""}
-              {info == "ozimHaqimda" ? <Routes> <Route path="/Contact" element={<OzimHaqimda />} /></Routes>   : ""}
-              {info == "talim" ? <Routes> <Route path="/Education" element={<Talim></Talim>} /></Routes>  : ""}
-              {info == "prayektlar" ? <Routes> <Route path="/Portfolio" element={<Prayektlar></Prayektlar>} /></Routes> : ""}
+              {info == "boshSahifa" ?  <BoshSaxifa></BoshSaxifa> : ""}
+              <Routes>
+              {info == "ozimHaqimda" ? <Route path="/Contact" element={<OzimHaqimda />} />  : ""}
+              {info == "talim" ?  <Route path="/Education" element={<Talim></Talim>} />  : ""}
+              {info == "prayektlar" ?  <Route path="/Portfolio" element={<Prayektlar></Prayektlar>} /> : ""}
+              </Routes>
             </div>
           </div>
       </ThemaContext.Provider>

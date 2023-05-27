@@ -89,19 +89,27 @@ export default function Sidebar() {
         {/* sarlovha qismim tugadi */}
 
         <ul className={`text-${theme == "dark" ? "light" : "dark"} mt-5`}>
+          <Link to={`/`}>
             <li
               className={`text-${
-                info == "boshSahifa" ? "danger" : (theme == "dark" ? "light" : "dark")
+                info == "boshSahifa"
+                  ? "danger"
+                  : theme == "dark"
+                  ? "light"
+                  : "dark"
               } fs-5`}
               onClick={BoshSahifa1}
             >
               <FontAwesomeIcon icon={faHome} /> Home
             </li>
+          </Link>
 
           <p></p>
           <Link to={`/Education`}>
             <li
-              className={`text-${info == "talim" ? "danger" : (theme == "dark" ? "light" : "dark")} fs-5`}
+              className={`text-${
+                info == "talim" ? "danger" : theme == "dark" ? "light" : "dark"
+              } fs-5`}
               onClick={Talim1}
             >
               {" "}
@@ -113,7 +121,11 @@ export default function Sidebar() {
           <Link to={`/Portfolio`}>
             <li
               className={`text-${
-                info == "prayektlar" ? "danger" : (theme == "dark" ? "light" : "dark")
+                info == "prayektlar"
+                  ? "danger"
+                  : theme == "dark"
+                  ? "light"
+                  : "dark"
               } fs-5`}
               onClick={Prayektlar1}
             >
@@ -126,7 +138,11 @@ export default function Sidebar() {
           <Link to={`/Contact`}>
             <li
               className={`text-${
-                info == "ozimHaqimda" ? "danger" : (theme == "dark" ? "light" : "dark")
+                info == "ozimHaqimda"
+                  ? "danger"
+                  : theme == "dark"
+                  ? "light"
+                  : "dark"
               } fs-5`}
               onClick={OzimHaqimda1}
             >
