@@ -55,7 +55,7 @@ function App() {
         >
           <div class={`containers ${theme == "dark" ? "" : "rang"}`}>
             <div className={`container1 ${theme == "dark" ? "" : "rang"}`}>
-              {change == true ? <Sidebar></Sidebar> : ""}
+              {change == true ? <div className="Hide1"><Sidebar></Sidebar></div> : ""}
               <div className="Hide">
                 <Sidebar></Sidebar>
               </div>
