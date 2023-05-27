@@ -92,7 +92,7 @@ export default function Sidebar() {
           <Link to={`/`}>
             <li
               className={`text-${
-                info == "boshSahifa" ? "danger" : "light"
+                info == "boshSahifa" ? "danger" : (theme == "dark" ? "light" : "dark")
               } fs-5`}
               onClick={BoshSahifa1}
             >
@@ -103,7 +103,7 @@ export default function Sidebar() {
           <p></p>
           <Link to={`/Education`}>
             <li
-              className={`text-${info == "talim" ? "danger" : "light"} fs-5`}
+              className={`text-${info == "talim" ? "danger" : (theme == "dark" ? "light" : "dark")} fs-5`}
               onClick={Talim1}
             >
               {" "}
@@ -115,7 +115,7 @@ export default function Sidebar() {
           <Link to={`/Portfolio`}>
             <li
               className={`text-${
-                info == "prayektlar" ? "danger" : "light"
+                info == "prayektlar" ? "danger" : (theme == "dark" ? "light" : "dark")
               } fs-5`}
               onClick={Prayektlar1}
             >
@@ -128,7 +128,7 @@ export default function Sidebar() {
           <Link to={`/Contact`}>
             <li
               className={`text-${
-                info == "ozimHaqimda" ? "danger" : "light"
+                info == "ozimHaqimda" ? "danger" : (theme == "dark" ? "light" : "dark")
               } fs-5`}
               onClick={OzimHaqimda1}
             >
