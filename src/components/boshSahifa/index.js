@@ -98,7 +98,7 @@ export default function BoshSaxifa() {
         } fs-1 text-center mb-4`}
       >
         {" "}
-        Frontend developer{" "}
+        Frontend developerr{" "}
       </p>
 
       <div class="ijtimoiyTarmoqlar">
