@@ -36,7 +36,7 @@ export default function Prayektlar() {
     {
       imgLink: portfolio,
       title:
-        "The project is flexible. Libraries used in the project: React, Sass, Bootstrap, Font Awesome, ThemaContext, useState",
+        "The project is flexible. Libraries used in the project: React, Sass, Bootstrap, Font Awesome, ThemaContext, useState, React-router-dom",
       link: "https://portfolio-iqboljon.netlify.app/",
     },
     {
