@@ -12,7 +12,9 @@ import Talim from "./components/talim";
 function App() {
   const [theme, setTheme] = useState("dark");
   const [change, setChange] = useState(false);
-  const [info, setInfo] = useState("boshSahifa");
+  const [info, setInfo] = useState(localStorage.getItem('Info'));
+  
+
 
   const toggleTheme = () => {
     setTheme((theme) => (theme == "light" ? "dark" : "light"));
@@ -23,20 +25,20 @@ function App() {
   };
 
   const BoshSahifa1 = () => {
-    setInfo((info) => (info != "boshSahifa" ? "boshSahifa" : info));
-    
+    setInfo((info) => (localStorage.setItem('Info', info) != "boshSahifa" ? "boshSahifa" : localStorage.getItem('Info', info)));
   };
 
   const OzimHaqimda1 = () => {
-    setInfo((info) => (info != "ozimHaqimda" ? "ozimHaqimda" : info));
+    setInfo((info) => (localStorage.setItem('Info', info) != "ozimHaqimda" ? "ozimHaqimda" : localStorage.getItem('Info', info)));
   };
 
   const Talim1 = () => {
-    setInfo((info) => (info != "talim" ? "talim" : info));
+    setInfo((info) => (localStorage.setItem('Info', info) != "talim" ? "talim" : localStorage.getItem('Info', info)));
   };
 
   const Prayektlar1 = () => {
-    setInfo((info) => (info != "prayektlar" ? "prayektlar" : info));
+    setInfo((info) => (localStorage.setItem('Info', info) != "prayektlar" ? "prayektlar" : localStorage.getItem('Info', info)));
+    
   };
 
   return (
@@ -60,11 +62,12 @@ function App() {
               <div className="Hide">
                 <Sidebar></Sidebar>
               </div>
-              {info == "boshSahifa" ?  <BoshSaxifa></BoshSaxifa> : ""}
               <Routes>
-              {info == "ozimHaqimda" ? <Route path="/Contact" element={<OzimHaqimda />} />  : ""}
-              {info == "talim" ?  <Route path="/Education" element={<Talim></Talim>} />  : ""}
-              {info == "prayektlar" ?  <Route path="/Portfolio" element={<Prayektlar></Prayektlar>} /> : ""}
+
+              <Route path="/" element={<BoshSaxifa></BoshSaxifa>} /> 
+              <Route path="/Contact" element={<OzimHaqimda />} /> 
+              <Route path="/Education" element={<Talim></Talim>} />
+               <Route path="/Portfolio" element={<Prayektlar></Prayektlar>} /> 
               </Routes>
             </div>
           </div>
