@@ -66,9 +66,9 @@ function App() {
               </div>
               <Routes>
               <Route path="/" element={<BoshSaxifa></BoshSaxifa>}/>
-              <Route path="/Contact" element={<OzimHaqimda />} /> 
-              <Route path="/Education" element={<Talim></Talim>} />
-              <Route path="/Portfolio" element={<Prayektlar></Prayektlar>} /> 
+              <Route path="Contact" element={<OzimHaqimda />} /> 
+              <Route path="Education" element={<Talim></Talim>} />
+              <Route path="Portfolio" element={<Prayektlar></Prayektlar>} /> 
               </Routes>
             </div>
           </div>

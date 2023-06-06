@@ -23,17 +23,17 @@ const links = [
     font: faHome,
   },
   {
-    to: "/Education",
+    to: "Education",
     title: "Education",
     font: faBook,
   },
   {
-    to: "/Portfolio",
+    to: "Portfolio",
     title: "Portfolio",
     font: faBuilding,
   },
   {
-    to: "/Contact",
+    to: "Contact",
     title: "Contact",
     font: faContactCard,
   },
