@@ -12,34 +12,36 @@ import Talim from "./components/talim";
 function App() {
   const [theme, setTheme] = useState("dark");
   const [change, setChange] = useState(false);
-  const [info, setInfo] = useState(localStorage.getItem('Info'));
+  // const [info, setInfo] = useState(localStorage.getItem('Info'));
   
 
 
   const toggleTheme = () => {
-    setTheme((theme) => (theme == "light" ? "dark" : "light"));
+    setTheme((theme) => ( theme == "light" ? "dark" : "light"));
   };
 
   const Exchange = () => {
     setChange((change) => (change = !change));
   };
 
-  const BoshSahifa1 = () => {
-    setInfo((info) => (localStorage.setItem('Info', info) != "boshSahifa" ? "boshSahifa" : localStorage.getItem('Info', info)));
-  };
-
-  const OzimHaqimda1 = () => {
-    setInfo((info) => (localStorage.setItem('Info', info) != "ozimHaqimda" ? "ozimHaqimda" : localStorage.getItem('Info', info)));
-  };
-
-  const Talim1 = () => {
-    setInfo((info) => (localStorage.setItem('Info', info) != "talim" ? "talim" : localStorage.getItem('Info', info)));
-  };
-
-  const Prayektlar1 = () => {
-    setInfo((info) => (localStorage.setItem('Info', info) != "prayektlar" ? "prayektlar" : localStorage.getItem('Info', info)));
+  // const BoshSahifa1 = () => {
+  //   setInfo((info) => (localStorage.setItem('Info', info) != "boshSahifa" ? "boshSahifa" : info));
     
-  };
+  // };
+
+  // const OzimHaqimda1 = () => {
+  //   setInfo((info) => (localStorage.setItem('Info', info) != "ozimHaqimda" ? "ozimHaqimda" : info));
+  //   localStorage.getItem('Info')
+  // };
+
+  // const Talim1 = () => {
+  //   setInfo((info) => (localStorage.setItem('Info', info) != "talim" ? "talim" : info));
+  // };
+
+  // const Prayektlar1 = () => {
+  //   setInfo((info) => (localStorage.setItem('Info', info) != "prayektlar" ? "prayektlar" : info));
+    
+  // };
 
   return (
     <BrowserRouter>
@@ -49,11 +51,11 @@ function App() {
       toggleTheme,
       Exchange,
           change,
-          info,
-          BoshSahifa1,
-          OzimHaqimda1,
-          Talim1,
-          Prayektlar1,
+          // info,
+          // BoshSahifa1,
+          // OzimHaqimda1,
+          // Talim1,
+          // Prayektlar1,
         }}
         >
           <div class={`containers ${theme == "dark" ? "" : "rang"}`}>
@@ -63,11 +65,10 @@ function App() {
                 <Sidebar></Sidebar>
               </div>
               <Routes>
-
-              <Route path="/" element={<BoshSaxifa></BoshSaxifa>} /> 
+              <Route path="/" element={<BoshSaxifa></BoshSaxifa>}/>
               <Route path="/Contact" element={<OzimHaqimda />} /> 
               <Route path="/Education" element={<Talim></Talim>} />
-               <Route path="/Portfolio" element={<Prayektlar></Prayektlar>} /> 
+              <Route path="/Portfolio" element={<Prayektlar></Prayektlar>} /> 
               </Routes>
             </div>
           </div>

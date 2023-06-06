@@ -1,22 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { faRectangleXmark } from "@fortawesome/free-regular-svg-icons";
 import {
   faBars,
   faBook,
   faBuilding,
   faContactCard,
-  faFilterCircleXmark,
   faHome,
-  faHouseCircleXmark,
-  faHouseMedicalCircleXmark,
-  faL,
   faMoon,
-  faSackXmark,
-  faSquareXmark,
   faSun,
-  faXmarkCircle,
-  faXmarksLines,
-  faXmarkSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -25,17 +16,40 @@ import BoshSaxifa from "../boshSahifa";
 import ThemaContext from "../contex/ThemeContex";
 import "./style.scss";
 
+const links = [
+  {
+    to: "/",
+    title: "Home",
+    font: faHome,
+  },
+  {
+    to: "/Education",
+    title: "Education",
+    font: faBook,
+  },
+  {
+    to: "/Portfolio",
+    title: "Portfolio",
+    font: faBuilding,
+  },
+  {
+    to: "/Contact",
+    title: "Contact",
+    font: faContactCard,
+  },
+];
+
 export default function Sidebar() {
   const {
     theme,
     toggleTheme,
     Exchange,
     change,
-    info,
-    BoshSahifa1,
-    OzimHaqimda1,
-    Talim1,
-    Prayektlar1,
+    // info,
+    // BoshSahifa1,
+    // OzimHaqimda1,
+    // Talim1,
+    // Prayektlar1,
   } = useContext(ThemaContext);
   return (
     <div class={`sidebar shadow bg-${theme} ${change == true ? "" : "hide"}`}>
@@ -89,67 +103,24 @@ export default function Sidebar() {
         {/* sarlovha qismim tugadi */}
 
         <ul className={`text-${theme == "dark" ? "light" : "dark"} mt-5`}>
-          <Link to={`/`}>
-            <li
-              className={`text-${
-                info == "boshSahifa"
-                  ? "danger"
-                  : theme == "dark"
-                  ? "light"
-                  : "dark"
-              } fs-5`}
-              onClick={BoshSahifa1}
-            >
-              <FontAwesomeIcon icon={faHome} /> Home
-            </li>
-          </Link>
-
-          <p></p>
-          <Link to={`/Education`}>
-            <li
-              className={`text-${
-                info == "talim" ? "danger" : theme == "dark" ? "light" : "dark"
-              } fs-5`}
-              onClick={Talim1}
-            >
-              {" "}
-              <FontAwesomeIcon icon={faBook} /> Education
-            </li>
-          </Link>
-
-          <p></p>
-          <Link to={`/Portfolio`}>
-            <li
-              className={`text-${
-                info == "prayektlar"
-                  ? "danger"
-                  : theme == "dark"
-                  ? "light"
-                  : "dark"
-              } fs-5`}
-              onClick={Prayektlar1}
-            >
-              {" "}
-              <FontAwesomeIcon icon={faBuilding} /> Portfolio
-            </li>
-          </Link>
-
-          <p></p>
-          <Link to={`/Contact`}>
-            <li
-              className={`text-${
-                info == "ozimHaqimda"
-                  ? "danger"
-                  : theme == "dark"
-                  ? "light"
-                  : "dark"
-              } fs-5`}
-              onClick={OzimHaqimda1}
-            >
-              {" "}
-              <FontAwesomeIcon icon={faContactCard} /> Contact
-            </li>
-          </Link>
+          {links.map((item) => {
+            return (
+              <>
+                <NavLink to={item.to} className={({ isActive }) => (isActive ? "active" : "")}>
+                  <li
+                    className={`text-${
+                      theme == "dark"
+                        ? "light"
+                        : "dark"
+                    } fs-5`}
+                  >
+                    <FontAwesomeIcon icon={item.font} /> {item.title}
+                  </li>
+                </NavLink>
+                <p></p>
+              </>
+            );
+          })}
         </ul>
 
         {/* barchasi tugadi */}

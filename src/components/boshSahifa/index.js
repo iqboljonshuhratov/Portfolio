@@ -9,17 +9,11 @@ import {
   faSun,
   faMoon,
   faSquareXmark,
-  faSunPlantWilt,
-  faBridge,
-  faRegistered,
-  faCloudSun,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faInstagram,
-  faSquareXing,
   faTelegram,
-  faUssunnah,
 } from "@fortawesome/free-brands-svg-icons";
 import { useContext } from "react";
 import ThemaContext from "../contex/ThemeContex";

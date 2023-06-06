@@ -25,11 +25,11 @@ export default function Prayektlar() {
     toggleTheme,
     Exchange,
     change,
-    info,
-    BoshSahifa1,
-    OzimHaqimda1,
-    Talim1,
-    Prayektlar1,
+    // info,
+    // BoshSahifa1,
+    // OzimHaqimda1,
+    // Talim1,
+    // Prayektlar1,
   } = useContext(ThemaContext);
 
   const cards = [
