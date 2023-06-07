@@ -41,6 +41,20 @@ export default function Prayektlar() {
     },
     {
       imgLink:
+        "https://scontent.ftas6-1.fna.fbcdn.net/v/t39.30808-6/347419650_221213700255733_7760274104670460156_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=E0NssPVYSSwAX8RZl-t&_nc_ht=scontent.ftas6-1.fna&oh=00_AfBg2ZNcD-IlEiYnIUaOza0W6IgMg99fkfIWgQv_pr-Edw&oe=6484660C",
+      title:
+        "The project is flexible. Libraries used in the project: React, React Bootstrap, Bootstrap, Font Awesome, ThemaContext, useState, React-router-dom",
+      link: "https://shop001.netlify.app/",
+    },
+    {
+      imgLink:
+        "https://scontent.ftas6-1.fna.fbcdn.net/v/t39.30808-6/347415777_150625248009467_7574248382041965366_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=NLaKbiVOdq4AX-oQq1g&_nc_ht=scontent.ftas6-1.fna&oh=00_AfC99wHOXBH42FUfgVrQyn5KwMlQQGlMe7Tblts8ABnr7w&oe=64841C1A",
+      title:
+        "The project is flexible. Libraries used in the project: React, React Bootstrap, Bootstrap, Font Awesome, ThemaContext, useState, React-router-dom",
+      link: "https://express24-loyha.netlify.app/",
+    },
+    {
+      imgLink:
         "https://scontent.ftas7-1.fna.fbcdn.net/v/t39.30808-6/347264040_254520530468293_2966080841737429538_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ZE7UanEGdG4AX9qW1qE&_nc_ht=scontent.ftas7-1.fna&oh=00_AfAR3ZjQNKdOqUiMHXC6ufbaLhiyKYQHNgtUtfhqGaKzWA&oe=64843232",
       title:
         "Libraries used in the project: JavaScript, Sass, Bootstrap, Font Awesome, REST API Methods: GET, POST, PUT, DELETE",
