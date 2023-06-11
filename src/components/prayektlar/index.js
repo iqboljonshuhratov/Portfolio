@@ -48,10 +48,10 @@ export default function Prayektlar() {
     },
     {
       imgLink:
-        "https://express24-iqboljon.netlify.app/",
+        "https://scontent.ftas6-1.fna.fbcdn.net/v/t39.30808-6/347415777_150625248009467_7574248382041965366_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=NLaKbiVOdq4AX-oQq1g&_nc_ht=scontent.ftas6-1.fna&oh=00_AfC99wHOXBH42FUfgVrQyn5KwMlQQGlMe7Tblts8ABnr7w&oe=64841C1A",
       title:
-        "The project is flexible. Libraries used in the project: React, React Bootstrap, Bootstrap, Font Awesome, ThemaContext, useState, React-router-dom, Redux ",
-      link: "https://express24-loyha.netlify.app/",
+        "The project is flexible. Libraries used in the project: React, React Bootstrap, Bootstrap, Font Awesome, ThemaContext, useState, React-router-dom, Redux",
+      link: "https://express24-iqboljon.netlify.app/",
     },
     {
       imgLink:
