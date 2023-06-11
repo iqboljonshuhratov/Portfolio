@@ -13,11 +13,15 @@ import styledImg from "./reactImg/styledComponenta.jpg";
 import ThemaContextimg from "./reactImg/Themecontex.jpg";
 import whatsapp from "./reactImg/whatsApp.jpg";
 import olcha from "./reactImg/olcha.jpg";
-import reactjpg from "./reactImg/react.jpg";
-import reactmap from "./reactImg/reactmap.jpg";
 import korinish from "./reactImg/korinish.jpg";
-import korinish2 from "./reactImg/korinish2.jpg";
 import portfolio from "./reactImg/portfolio.jpg";
+import krasofka from "./reactImg/qrasofka.jpg";
+import express24 from "./reactImg/express24.jpg";
+import backend from "./reactImg/backend.jpg";
+import maktab from "./reactImg/maktab.jpg";
+import video from "./reactImg/video.jpg";
+import kalkulyator from "./reactImg/kalkulyator.jpg";
+import pomodoro from "./reactImg/pomodoro.jpg";
 
 export default function Prayektlar() {
   const {
@@ -33,6 +37,7 @@ export default function Prayektlar() {
   } = useContext(ThemaContext);
 
   const cards = [
+
     {
       imgLink: portfolio,
       title:
@@ -40,22 +45,19 @@ export default function Prayektlar() {
       link: "https://portfolio-iqboljon.netlify.app/",
     },
     {
-      imgLink:
-        "https://scontent.ftas6-1.fna.fbcdn.net/v/t39.30808-6/347419650_221213700255733_7760274104670460156_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=E0NssPVYSSwAX8RZl-t&_nc_ht=scontent.ftas6-1.fna&oh=00_AfBg2ZNcD-IlEiYnIUaOza0W6IgMg99fkfIWgQv_pr-Edw&oe=6484660C",
+      imgLink: krasofka,
       title:
         "The project is flexible. Libraries used in the project: React, React Bootstrap, Bootstrap, Font Awesome, ThemaContext, useState, React-router-dom",
       link: "https://shop001.netlify.app/",
     },
     {
-      imgLink:
-        "https://scontent.ftas6-1.fna.fbcdn.net/v/t39.30808-6/347415777_150625248009467_7574248382041965366_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=NLaKbiVOdq4AX-oQq1g&_nc_ht=scontent.ftas6-1.fna&oh=00_AfC99wHOXBH42FUfgVrQyn5KwMlQQGlMe7Tblts8ABnr7w&oe=64841C1A",
+      imgLink: express24,
       title:
         "The project is flexible. Libraries used in the project: React, React Bootstrap, Bootstrap, Font Awesome, ThemaContext, useState, React-router-dom, Redux",
       link: "https://express24-iqboljon.netlify.app/",
     },
     {
-      imgLink:
-        "https://scontent.ftas7-1.fna.fbcdn.net/v/t39.30808-6/347264040_254520530468293_2966080841737429538_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ZE7UanEGdG4AX9qW1qE&_nc_ht=scontent.ftas7-1.fna&oh=00_AfAR3ZjQNKdOqUiMHXC6ufbaLhiyKYQHNgtUtfhqGaKzWA&oe=64843232",
+      imgLink: backend,
       title:
         "Libraries used in the project: JavaScript, Sass, Bootstrap, Font Awesome, REST API Methods: GET, POST, PUT, DELETE",
       link: "https://js-loyha-5.netlify.app/",
@@ -67,14 +69,12 @@ export default function Prayektlar() {
       link: "https://olchaloyha.netlify.app/",
     },
     {
-      imgLink:
-        "https://scontent.ftas6-1.fna.fbcdn.net/v/t39.30808-6/347242842_640498821276516_1257941143219214786_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=SEBZOBgOMLoAX-5j1hX&_nc_ht=scontent.ftas6-1.fna&oh=00_AfDYnvDmgxDlZHBJtGaG9LD1EfvKiKanDgUZ4tM7rag_sg&oe=6484D775",
+      imgLink: maktab,
       title: "Libraries used in the project: JavaScript, Sass, Bootstrap",
       link: "https://js-loyha1.netlify.app/",
     },
     {
-      imgLink:
-        "https://scontent.ftas6-1.fna.fbcdn.net/v/t39.30808-6/347394378_602869448457619_8150432138663987791_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=BnY1Y4ngACsAX__UpP2&_nc_ht=scontent.ftas6-1.fna&oh=00_AfAsyRRt-izEr6iVDdseTQE4VMA_n5-F_ImTomFEgy2Tpg&oe=648486DC",
+      imgLink: video,
       title: "Libraries used in the project: JavaScript, Sass",
       link: "https://js-loyha2.netlify.app/",
     },
@@ -85,8 +85,7 @@ export default function Prayektlar() {
       link: "https://reactbootstraployha.netlify.app/#memes",
     },
     {
-      imgLink:
-        "https://scontent.ftas7-1.fna.fbcdn.net/v/t39.30808-6/347408868_954593698905823_2884010330645569752_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Nx8l8Nllgv8AX860je2&_nc_ht=scontent.ftas7-1.fna&oh=00_AfCh4tJ1uikhsrJUsYWWopI4xXvMZLS7b_3rEz4hbA8Ksg&oe=6484105F",
+      imgLink: kalkulyator,
       title: "Libraries used in the project: JavaScript, Sass",
       link: "https://js-loyha3.netlify.app/",
     },
@@ -97,8 +96,7 @@ export default function Prayektlar() {
       link: "https://styledcomponentsloyha.netlify.app/",
     },
     {
-      imgLink:
-        "https://scontent.ftas7-1.fna.fbcdn.net/v/t39.30808-6/347235972_3442901459303253_6801743439120119219_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=No5qK4X6wz8AX8vabAH&_nc_ht=scontent.ftas7-1.fna&oh=00_AfBqNdK_NlsmFAzx9PbBVNeGxwnn5fwPNsOH-oFmaJBw1g&oe=64843ECC",
+      imgLink: pomodoro,
       title:
         "Libraries used in the project: HTML, Sass, JavaScript, setInterval, LocalStorage",
       link: "https://pomodoro-loyha.netlify.app/",
@@ -114,98 +112,6 @@ export default function Prayektlar() {
       title: "Libraries used in the project: React, css",
       link: "https://reactkorinish.netlify.app/",
     },
-
-    // {
-    //   imgLink:
-    //     "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347451380_561986982750016_7057183982176312124_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=7EVJGQjbXJEAX8miNGY&_nc_oc=AQn9FwxrJe-f6f5rCN7FQvGt5EIJVJ713_m99GDYm0HeXCkYxeg2S_qpRYL7qOFun3g&_nc_ht=scontent.ftas9-1.fna&oh=00_AfBlLcwxJgMUEtuen0FdNuoNNIqdf0szXOXyG1AspS8uXA&oe=646F4411",
-    //   title:
-    //     "Loyiha moslashuvchan. Loyihada qo‘llanilgan kutubxonalar: HTML, Sass",
-    //   link: "https://loyha01.netlify.app/",
-    // },
-    // {
-    //   imgLink:
-    //     "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347595223_3447819388881002_6314880019281173614_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=jMnwWa9TygsAX967hoZ&_nc_ht=scontent.ftas9-1.fna&oh=00_AfDB0cJ4RzozvlOF-R92wsMFrwqL3YVIk5_UD6gBsqhPeA&oe=646F400F",
-    //   title:
-    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem ad reprehenderit ullam quaerat ab",
-    //   link: "https://loyha5.netlify.app/",
-    // },
-
-    // {
-    //   imgLink: reactjpg,
-    //   title: "6Loyihada qo‘llanilgan kutubxonalar: React, Sass, Bootstrap",
-    //   link: "https://reactloyha5.netlify.app/",
-    // },
-    // {
-    //   imgLink: reactmap,
-    //   title: "7Loyihada qo‘llanilgan kutubxonalar: React, Sass, Bootstrap",
-    //   link: "https://reactloyha3.netlify.app/",
-    // },
-
-    // {
-    //   imgLink: korinish2,
-    //   title: "9Loyihada qo‘llanilgan kutubxonalar: React, Sass",
-    //   link: "https://reactkorinish2.netlify.app/",
-    // },
-
-    // {
-    //   imgLink:
-    //     "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347433810_950777776250350_2830776784148130300_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=uPf57y8VQwMAX97pkP_&_nc_ht=scontent.ftas9-1.fna&oh=00_AfCuGyvdqpMFyFGA_WZJckCztajccn0d9C5nysMlMywMWg&oe=646FF319",
-    //   title:
-    //     "15Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem ad reprehenderit ullam quaerat ab",
-    //   link: "https://loyha2.netlify.app/",
-    // },
-    // {
-    //   imgLink:
-    //     "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347384522_166015306422564_4327422640399749769_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=te_2dPVBUvcAX_NXGVV&_nc_ht=scontent.ftas9-1.fna&oh=00_AfC-Nq8r_5eYyrDOcmYSKijY6D4aYCDUG6_khbdSzNHWsA&oe=646EC47E",
-    //   title:
-    //     "16Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem ad reprehenderit ullam quaerat ab'",
-    //   link: "https://loyha3.netlify.app/",
-    // },
-    // {
-    //   imgLink:
-    //     "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347596192_1305742993347367_4648329255482819955_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=IH4vivafySQAX_Pa-gB&_nc_ht=scontent.ftas9-1.fna&oh=00_AfBKP07wc-Qg8Z8Ursp_YaWPcXzETy7twZIOpbeBZgJZFw&oe=646F5C4E",
-    //   title:
-    //     "17Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem ad reprehenderit ullam quaerat ab",
-    //   link: "https://loyha4.netlify.app/",
-    // },
-
-    // {
-    //   imgLink:
-    //     "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347419934_771042534473837_5679663727633726626_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Hl8gNu0Ij-YAX_zO1F8&_nc_ht=scontent.ftas9-1.fna&oh=00_AfDBZqLAltKQF75XzbcXi1IsBFxh_RoZjrylrw3EGC6QqQ&oe=646E2D4D",
-    //   title:
-    //     "19Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem ad reprehenderit ullam quaerat ab",
-    //   link: "https://loyha06.netlify.app/",
-    // },
-
-    // {
-    //   imgLink:
-    //     "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347228351_1018178745834395_929360592173916398_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=cm6-U8lB7aQAX9B3J2G&_nc_ht=scontent.ftas9-1.fna&oh=00_AfC_GmI01Vo2jVFIgkcbbxd9faMmXqcpoISlGT-dl0cd-w&oe=646E5880",
-    //   title:
-    //     "20Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem ad reprehenderit ullam quaerat ab",
-    //   link: "https://loyha7.netlify.app/",
-    // },
-
-    // {
-    //   imgLink:
-    //     "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347550756_255435497168708_1120641104404748180_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=yRA0wEgopwoAX8MSftK&_nc_ht=scontent.ftas9-1.fna&oh=00_AfCEI2jc7vDO4y97Ur7u1narUuICvbKTBKxGzLdCHargBg&oe=646E78E9",
-    //   title:
-    //     "21Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem ad reprehenderit ullam quaerat ab",
-    //   link: "https://loyha8.netlify.app/",
-    // },
-    // {
-    //   imgLink:
-    //     "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347248150_929282064996060_1843199586983653626_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=eSt_pgzAsGkAX86t5es&_nc_ht=scontent.ftas9-1.fna&oh=00_AfACjOXfohLktWN5A3LnvbpklpFccH79jGQTBpx4dGBk3w&oe=646F2493",
-    //   title:
-    //     "22Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem ad reprehenderit ullam quaerat ab",
-    //   link: "https://loyha10.netlify.app/",
-    // },
-    // {
-    //   imgLink:
-    //     "https://scontent.ftas9-1.fna.fbcdn.net/v/t39.30808-6/347238154_1320403401874386_1242454479414700921_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Hm88w9lKf-wAX9VXfMx&_nc_ht=scontent.ftas9-1.fna&oh=00_AfCDb1lG_SxZ1UI62MNc1N7Ibf-cY9enLUOlHjrzeuS9_g&oe=646E7B1E",
-    //   title:
-    //     "23Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatem ad reprehenderit ullam quaerat ab",
-    //   link: "https://loyha010.netlify.app/",
-    // },
   ];
 
   return (
