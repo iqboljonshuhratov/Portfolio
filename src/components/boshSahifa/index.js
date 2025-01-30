@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import qol from "./rasmlar/qol.jpg";
-import logo from "./rasmlar/Iqboljon.jpg";
+import logo from "./rasmlar/man2.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhone,
@@ -35,7 +35,10 @@ export default function BoshSaxifa() {
               <FontAwesomeIcon icon={faBars} />
             )}
           </button>
-          <div className={`mode ${theme == "dark" ? "" : "mode_dark"}`} onClick={toggleTheme}>
+          <div
+            className={`mode ${theme == "dark" ? "" : "mode_dark"}`}
+            onClick={toggleTheme}
+          >
             <div className={`btn ${theme == "dark" ? "" : "dark"}`}>
               <div className={`btn_icon_container`}>
                 {theme == "dark" ? (
@@ -46,29 +49,25 @@ export default function BoshSaxifa() {
               </div>
             </div>
           </div>
-          {/* <button id="buttonSun" className={` text-${theme == "dark" ? "" : "dark"}`} onClick={toggleTheme}>
-            {theme == "dark" ? (
-              <FontAwesomeIcon icon={faSun} />
-            ) : (
-              <FontAwesomeIcon icon={faMoon} />
-            )}
-          </button> */}
         </div>
       ) : (
         ""
       )}
       <div className="themeBox">
-      <div className={`mode2 ${theme == "dark" ? "" : "mode_dark2"}`} onClick={toggleTheme}>
-            <div className={`btn ${theme == "dark" ? "" : "dark"}`}>
-              <div className={`btn_icon_container`}>
-                {theme == "dark" ? (
-                  <FontAwesomeIcon className="sun" icon={faSun} />
-                ) : (
-                  <FontAwesomeIcon className="moon" icon={faMoon} />
-                )}
-              </div>
+        <div
+          className={`mode2 ${theme == "dark" ? "" : "mode_dark2"}`}
+          onClick={toggleTheme}
+        >
+          <div className={`btn ${theme == "dark" ? "" : "dark"}`}>
+            <div className={`btn_icon_container`}>
+              {theme == "dark" ? (
+                <FontAwesomeIcon className="sun" icon={faSun} />
+              ) : (
+                <FontAwesomeIcon className="moon" icon={faMoon} />
+              )}
             </div>
           </div>
+        </div>
       </div>
 
       {/* theme box */}
@@ -84,7 +83,7 @@ export default function BoshSaxifa() {
         } fw-bold text-center`}
       >
         {" "}
-        Iqboljon Shukhratov{" "}
+        Ibrokhimov Xadyatillo{" "}
       </h1>
       <p
         className={`text-${
@@ -92,33 +91,29 @@ export default function BoshSaxifa() {
         } fs-1 text-center mb-4`}
       >
         {" "}
-        Frontend developer{" "}
+        Ko'cha bolasi{" "}
       </p>
 
       <div class="ijtimoiyTarmoqlar">
-        <a
-          class="tel"
-          href="https://t.me/Iqboljon_Shuxratbekov"
-          target="_blank"
-        >
+        <a class="tel" href="https://t.me/atillo0808" target="_blank">
           <FontAwesomeIcon icon={faTelegram} />
         </a>
         <a
           class="tel"
-          href="https://www.facebook.com/profile.php?id=100081163933802"
-          target="_blank"
+          href="#"
+          // target="_blank"
         >
           {" "}
           <FontAwesomeIcon icon={faFacebook} />
         </a>
         <a
           class="tel"
-          href="https://www.instagram.com/_iqboljon_shuhratbekov/"
+          href="https://www.instagram.com/atillo__0808__/"
           target="_blank"
         >
           <FontAwesomeIcon icon={faInstagram} />
         </a>
-        <a class="tel" href="tel:+998940664060" target="_blank">
+        <a class="tel" href="tel:+998979765756">
           <FontAwesomeIcon icon={faPhone} />
         </a>
       </div>

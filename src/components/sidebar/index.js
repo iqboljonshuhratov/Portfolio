@@ -97,7 +97,7 @@ export default function Sidebar() {
             theme == "dark" ? "light" : "dark"
           } mt-5 ps-5 pt-5`}
         >
-          Iqboljon
+          Xadyatillo
         </h1>
 
         {/* sarlovha qismim tugadi */}
@@ -106,12 +106,13 @@ export default function Sidebar() {
           {links.map((item) => {
             return (
               <>
-                <NavLink to={item.to} className={({ isActive }) => (isActive ? "active" : "")}>
+                <NavLink
+                  to={item.to}
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                >
                   <li
                     className={`text-${
-                      theme == "dark"
-                        ? "light"
-                        : "dark"
+                      theme == "dark" ? "light" : "dark"
                     } fs-5`}
                   >
                     <FontAwesomeIcon icon={item.font} /> {item.title}

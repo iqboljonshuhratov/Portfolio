@@ -9,6 +9,7 @@ import {
 import { useContext } from "react";
 import ThemaContext from "../contex/ThemeContex";
 import "./talim.scss";
+import InfoImg from "../boshSahifa/rasmlar/man.jpg";
 
 export default function Talim() {
   const { theme, toggleTheme, Exchange, change } = useContext(ThemaContext);
@@ -69,13 +70,13 @@ export default function Talim() {
           </div>
         </div>
       </div>
-      
+
       {/* thema tugadi */}
       <div className="sarlovha mt-5 mb-4">
         <h1
           className={`text-${theme == "dark" ? "light" : "dark"} text-center`}
         >
-          Education
+          Talim Olganligi
         </h1>
       </div>
       {/* sarlovha tugadi va manzil qiisim boshlandi */}
@@ -88,23 +89,25 @@ export default function Talim() {
         <div className={`info1 rounded bg-${theme}`}>
           <div className="img-box p-2">
             <img
+              style={{ height: "200px" }}
               className="rounded"
-              src={`https://avatars.mds.yandex.net/get-altay/4398559/2a000001825b3e71b438ddee4d13276bc6d5/XXL_height`}
+              src={InfoImg}
               alt="dars"
             />
           </div>
           <div className="text-box">
-            {/* <h3 className={`text-${theme == "dark" ? "light" : "dark"} p-3`}>
-              Ta'lim olgan muassasa
-            </h3> */}
             <p className={`text-${theme == "dark" ? "light" : "dark"} p-3`}>
-              He was admitted to the main course on the basis of an examination.{" "}
+              Avvaliga yaxshi bola bolgan keyin 21-DIMIda o'qigan men bilan{" "}
               <br />
-              Admitted to the main course on the basis of an examination. <br />
-              He studied frontend programming language in the basic course.{" "}
+              Uyerni bitirgan aduga tushkan, adashmasam o'sha paytlar ham yaxshi
+              edi <br />
+              Keyin birdaniga yevropaga bordiyu aynidi. Bir qiz topib olgan{" "}
               <br />
-              Mastered frontend development technologies (based on React
-              library). <br />
+              Aytishlaricha u qizga borini ham berishga tayyor bizni eslab
+              telefon qilmasa qilmaydiki lekin anavi qizini esidan chiqarmaydi{" "}
+              <br />
+              Qisqa qilib aytkanda telba bir Oshiq bo'lib qolgan desa ham
+              bo'ladi
             </p>
           </div>
         </div>

@@ -9,19 +9,23 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useContext } from "react";
 import ThemaContext from "../contex/ThemeContex";
-import styledImg from "./reactImg/styledComponenta.jpg";
-import ThemaContextimg from "./reactImg/Themecontex.jpg";
-import whatsapp from "./reactImg/whatsApp.jpg";
-import olcha from "./reactImg/olcha.jpg";
-import korinish from "./reactImg/korinish.jpg";
-import portfolio from "./reactImg/portfolio.jpg";
-import krasofka from "./reactImg/qrasofka.jpg";
-import express24 from "./reactImg/express24.jpg";
-import backend from "./reactImg/backend.jpg";
-import maktab from "./reactImg/maktab.jpg";
-import video from "./reactImg/video.jpg";
-import kalkulyator from "./reactImg/kalkulyator.jpg";
-import pomodoro from "./reactImg/pomodoro.jpg";
+// import styledImg from "./reactImg/styledComponenta.jpg";
+// import ThemaContextimg from "./reactImg/Themecontex.jpg";
+// import whatsapp from "./reactImg/whatsApp.jpg";
+// import olcha from "./reactImg/olcha.jpg";
+// import korinish from "./reactImg/korinish.jpg";
+// import portfolio from "./reactImg/portfolio.jpg";
+// import krasofka from "./reactImg/qrasofka.jpg";
+// import express24 from "./reactImg/express24.jpg";
+// import backend from "./reactImg/backend.jpg";
+// import maktab from "./reactImg/maktab.jpg";
+// import video from "./reactImg/video.jpg";
+// import kalkulyator from "./reactImg/kalkulyator.jpg";
+// import pomodoro from "./reactImg/pomodoro.jpg";
+
+import ish from "../boshSahifa/rasmlar/ish1.jpg";
+import ish2 from "../boshSahifa/rasmlar/ish2.jpg";
+import ish3 from "../boshSahifa/rasmlar/ish3.jpg";
 
 export default function Prayektlar() {
   const {
@@ -37,81 +41,78 @@ export default function Prayektlar() {
   } = useContext(ThemaContext);
 
   const cards = [
-
     {
-      imgLink: portfolio,
-      title:
-        "The project is flexible. Libraries used in the project: React, Sass, Bootstrap, Font Awesome, ThemaContext, useState, React-router-dom",
+      imgLink: ish2,
+      title: "O'zbekistondan ko'ra chetka muhabbati kuchliroq",
       link: "https://portfolio-iqboljon.netlify.app/",
     },
     {
-      imgLink: krasofka,
+      imgLink: ish,
       title:
-        "The project is flexible. Libraries used in the project: React, React Bootstrap, Bootstrap, Font Awesome, ThemaContext, useState, React-router-dom",
+        "qiladigon ishi odatda sayohat kabi O'zbekistonda qolishni hohlamaydigon yagona mavjudot",
       link: "https://shop001.netlify.app/",
     },
     {
-      imgLink: express24,
-      title:
-        "The project is flexible. Libraries used in the project: React, React Bootstrap, Bootstrap, Font Awesome, ThemaContext, useState, React-router-dom, Redux",
+      imgLink: ish3,
+      title: "davlat amaldorlari chiqargan qonundan noligani noligan",
       link: "https://express24-iqboljon.netlify.app/",
     },
-    {
-      imgLink: backend,
-      title:
-        "Libraries used in the project: JavaScript, Sass, Bootstrap, Font Awesome, REST API Methods: GET, POST, PUT, DELETE",
-      link: "https://js-loyha-5.netlify.app/",
-    },
-    {
-      imgLink: olcha,
-      title:
-        "Libraries used in the project: React, CSS, Bootstrap, ThemaContext, UseState",
-      link: "https://olchaloyha.netlify.app/",
-    },
-    {
-      imgLink: maktab,
-      title: "Libraries used in the project: JavaScript, Sass, Bootstrap",
-      link: "https://js-loyha1.netlify.app/",
-    },
-    {
-      imgLink: video,
-      title: "Libraries used in the project: JavaScript, Sass",
-      link: "https://js-loyha2.netlify.app/",
-    },
-    {
-      imgLink: ThemaContextimg,
-      title:
-        "Libraries used in the project: React, Sass, Bootstrap, React Bootstrap, Font Awesome, ThemaContext, useState",
-      link: "https://reactbootstraployha.netlify.app/#memes",
-    },
-    {
-      imgLink: kalkulyator,
-      title: "Libraries used in the project: JavaScript, Sass",
-      link: "https://js-loyha3.netlify.app/",
-    },
-    {
-      imgLink: styledImg,
-      title:
-        "Libraries used in the project: React, Bootstrap, React Bootstrap, Font Awesome, Styled-Components",
-      link: "https://styledcomponentsloyha.netlify.app/",
-    },
-    {
-      imgLink: pomodoro,
-      title:
-        "Libraries used in the project: HTML, Sass, JavaScript, setInterval, LocalStorage",
-      link: "https://pomodoro-loyha.netlify.app/",
-    },
-    {
-      imgLink: whatsapp,
-      title:
-        "Libraries used in the project: React, Sass, Bootstrap, Font Awesome, ThemaContext, useState",
-      link: "https://whatsapployha.netlify.app/",
-    },
-    {
-      imgLink: korinish,
-      title: "Libraries used in the project: React, css",
-      link: "https://reactkorinish.netlify.app/",
-    },
+    // {
+    //   imgLink: backend,
+    //   title:
+    //     "Libraries used in the project: JavaScript, Sass, Bootstrap, Font Awesome, REST API Methods: GET, POST, PUT, DELETE",
+    //   link: "https://js-loyha-5.netlify.app/",
+    // },
+    // {
+    //   imgLink: olcha,
+    //   title:
+    //     "Libraries used in the project: React, CSS, Bootstrap, ThemaContext, UseState",
+    //   link: "https://olchaloyha.netlify.app/",
+    // },
+    // {
+    //   imgLink: maktab,
+    //   title: "Libraries used in the project: JavaScript, Sass, Bootstrap",
+    //   link: "https://js-loyha1.netlify.app/",
+    // },
+    // {
+    //   imgLink: video,
+    //   title: "Libraries used in the project: JavaScript, Sass",
+    //   link: "https://js-loyha2.netlify.app/",
+    // },
+    // {
+    //   imgLink: ThemaContextimg,
+    //   title:
+    //     "Libraries used in the project: React, Sass, Bootstrap, React Bootstrap, Font Awesome, ThemaContext, useState",
+    //   link: "https://reactbootstraployha.netlify.app/#memes",
+    // },
+    // {
+    //   imgLink: kalkulyator,
+    //   title: "Libraries used in the project: JavaScript, Sass",
+    //   link: "https://js-loyha3.netlify.app/",
+    // },
+    // {
+    //   imgLink: styledImg,
+    //   title:
+    //     "Libraries used in the project: React, Bootstrap, React Bootstrap, Font Awesome, Styled-Components",
+    //   link: "https://styledcomponentsloyha.netlify.app/",
+    // },
+    // {
+    //   imgLink: pomodoro,
+    //   title:
+    //     "Libraries used in the project: HTML, Sass, JavaScript, setInterval, LocalStorage",
+    //   link: "https://pomodoro-loyha.netlify.app/",
+    // },
+    // {
+    //   imgLink: whatsapp,
+    //   title:
+    //     "Libraries used in the project: React, Sass, Bootstrap, Font Awesome, ThemaContext, useState",
+    //   link: "https://whatsapployha.netlify.app/",
+    // },
+    // {
+    //   imgLink: korinish,
+    //   title: "Libraries used in the project: React, css",
+    //   link: "https://reactkorinish.netlify.app/",
+    // },
   ];
 
   return (

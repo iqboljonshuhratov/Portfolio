@@ -43,13 +43,6 @@ export default function OzimHaqimda() {
               </div>
             </div>
           </div>
-          {/* <button id="buttonSun" className={` text-${theme == "dark" ? "" : "dark"}`} onClick={toggleTheme}>
-            {theme == "dark" ? (
-              <FontAwesomeIcon icon={faSun} />
-            ) : (
-              <FontAwesomeIcon icon={faMoon} />
-            )}
-          </button> */}
         </div>
       ) : (
         ""
@@ -78,7 +71,7 @@ export default function OzimHaqimda() {
             theme == "dark" ? "light" : "dark"
           } text-center`}
         >
-          Contact me
+          Men bilan bog'lanish
         </h1>
       </div>
       {/* sarlovha tugadi va manzil qiisim boshlandi */}
@@ -86,11 +79,12 @@ export default function OzimHaqimda() {
       <div className="contact-box d-flex justify-content-between">
         <div className="contactInfo">
           <h4 className={`text-${theme == "dark" ? "light" : "dark"} mb-1`}>
-            Get in Touch
+            Aloqa qiling
           </h4>
           <p className={`text-${theme == "dark" ? "light" : "dark"} mb-3 pe-5`}>
-            Here, you can find the contact details, if you find me suitible for
-            your company please contact me and let me do my best!.
+            Bu erda siz aloqa ma'lumotlarini topishingiz mumkin, agar meni
+            kompaniyangizga mos deb bilsangiz, men bilan bog'laning va menga
+            qo'limdan kelganini qilishga ruxsat bering!
           </p>
           <span
             className={`text-${theme == "dark" ? "light" : "dark"} fw-bold`}
@@ -98,7 +92,7 @@ export default function OzimHaqimda() {
             Name
           </span>
           <p className={`text-${theme == "dark" ? "light" : "dark"}`}>
-            Shukhratov Iqboljon
+            Ibrohimov Xadyatillo
           </p>
           <br />
           <span
@@ -107,7 +101,7 @@ export default function OzimHaqimda() {
             Address
           </span>
           <p className={`text-${theme == "dark" ? "light" : "dark"}`}>
-            Tashkent, Uzbekistan
+            Andijon, Uzbekistan
           </p>
           <br />
           <span
@@ -116,17 +110,17 @@ export default function OzimHaqimda() {
             Email
           </span>
           <p className={`text-${theme == "dark" ? "light" : "dark"}`}>
-            <a href="#">shuhratjonoviqboljon79@gmail.com</a>
+            <a href="#">xadyatilloibrohimov0808@gmail.com</a>
           </p>
           <br />
           <span
             className={`text-${theme == "dark" ? "light" : "dark"} fw-bold`}
           >
-            GitHub
+            Instagram
           </span>
           <p className={`text-${theme == "dark" ? "light" : "dark"}`}>
-            <a href="https://github.com/iqboljonshuhratov" target="_blank">
-              Visit GitHub profile
+            <a href="https://www.instagram.com/atillo__0808__/" target="_blank">
+              Instagram
             </a>
           </p>
         </div>
